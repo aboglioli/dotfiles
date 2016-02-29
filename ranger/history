@@ -1,0 +1,4 @@
+open_with gvim
+open_with ./
+open_with sh
+open_with 

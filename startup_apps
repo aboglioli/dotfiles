@@ -1,0 +1,11 @@
+setxkbmap es &
+xcompmgr -n &
+wmname LG3D &
+feh --bg-scale ~/Imagenes/background.jpg
+xrdb -merge ~/.Xresources
+
+nm-applet &
+pulseaudio -D &
+#conky &
+dropbox &
+#synapse -s &

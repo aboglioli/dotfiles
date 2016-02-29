@@ -1,0 +1,15 @@
+bundles.txt
+colorschemes
+delimitMate
+emmet-vim
+indentLine
+nerdtree
+plantuml-syntax
+supertab
+taglist
+ultisnips
+vim-javascript
+vim-javascript-syntax
+vim-multiple-cursors
+vim-surround
+YouCompleteMe
