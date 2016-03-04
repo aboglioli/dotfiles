@@ -5,6 +5,7 @@ SRC_DIR=$PWD
 rm ~/.bashrc
 rm ~/.conkyrc
 rm ~/.i3/config
+rm ~/.i3status.conf
 rm ~/.rtorrent.rc
 rm ~/.tmux.conf
 rm ~/.vimrc
@@ -44,10 +45,12 @@ ln -s $SRC_DIR/terminator/config ~/.config/terminator/config
 ln -s $SRC_DIR/ranger ~/.config/ranger
 
 sudo ln -s $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
-sudo ln -s $SRC_DIR/yaourt/yaourtrc /etc/yaourtrc
 sudo ln -s $SRC_DIR/ssh/ssh_config /etc/ssh/ssh_config
 sudo ln -s $SRC_DIR/ssh/sshd_config /etc/ssh/sshd_config
 
 # Install fonts
 cp -r $SRC_DIR/fonts/* ~/.fonts/
 fc-cache -vf
+
+# Copy necessary files
+cp $SRC_DIR/zsh/themes/* ~/.oh-my-zsh/custom
