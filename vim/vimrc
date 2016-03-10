@@ -554,7 +554,7 @@ set exrc secure
 set autoread
 
 " Always change current dirrectory to current-editing-file dir
-"set autochdir
+" set autochdir
 
 " Indicates fast terminal connection
 set ttyfast
@@ -844,6 +844,7 @@ endif
 " ------------ My keymaps -----------------
 nnoremap <F12> :sh<CR>
 nnoremap <F2> :w<CR>
+nnoremap <F3> :echo @%<CR>
 nnoremap <silent><leader>b :CtrlPBuffer<CR>
 nnoremap <silent><leader>m :CtrlPMRU<CR>
 nmap <silent><leader>v :bprevious<CR>
@@ -869,8 +870,8 @@ if has('gui_running')
     set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
-    set background=dark
-    colorscheme luna
+    set background=light
+    colorscheme lucius
 else
     set background=dark
     colorscheme luna

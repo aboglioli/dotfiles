@@ -60,18 +60,14 @@ export TERM=xterm-256color
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Aliases
-alias dev="cd ~/Desarrollo"
-alias proj="cd ~/Desarrollo/Proyectos"
-alias lab="cd ~/Desarrollo/Lab"
-
-alias doc="cd ~/Documentos"
-alias book="cd ~/Documentos/Libros"
-
-alias temp="cd ~/Temporal"
-alias prog="cd ~/Programas"
 alias app="cd ~/Programas/Instalados"
+alias dev="cd ~/Desarrollo"
+alias lab="cd ~/Lab"
+alias temp="cd ~/Temporal"
 
 alias vimrc="gvim ~/.vimrc"
+
+export PATH="./node_modules/.bin:$PATH"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

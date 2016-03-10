@@ -6,6 +6,6 @@ xrdb -merge ~/.Xresources
 
 nm-applet &
 pulseaudio -D &
-#conky &
+conky &
 dropbox &
 #synapse -s &

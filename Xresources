@@ -1,11 +1,11 @@
 !------------------------------------------------------------------------------
 ! c o l o r -  s e t t i n g s
-#define base00 #40403f
+#define base00 #352d2d
 #define base01 #292824
 #define base02 #6e6b5e
 #define base03 #7d7a68
 #define base04 #999580
-#define base05 #a6a28c
+#define base05 #d8d8d8
 #define base06 #e8e4cf
 #define base07 #fefbec
 #define base08 #d73737
@@ -60,8 +60,8 @@ Xft*hinting:            full
 ! u r x v t
 
 URxvt*geometry:         112x22
-URxvt*font:            xft:Inconsolata:size=13
-URxvt*urlLauncher:         firefox
+URxvt*font:            xft:Inconsolata:size=12
+URxvt*urlLauncher:         chromium
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
