@@ -15,6 +15,7 @@ rm ~/.zshrc
 rm ~/.fonts.conf
 rm ~/.Xresources
 rm ~/.synergy.conf
+rm ~/.background.jpg
 
 rm ~/.config/synapse/config.json
 rm ~/.config/terminator/config
@@ -39,6 +40,7 @@ ln -s $SRC_DIR/zsh/zshrc ~/.zshrc
 ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
 ln -s $SRC_DIR/Xresources ~/.Xresources
 ln -s $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
+ln -s $SRC_DIR/background.jpg ~/.background.jpg
 
 ln -s $SRC_DIR/synapse/config.json ~/.config/synapse/config.json
 ln -s $SRC_DIR/terminator/config ~/.config/terminator/config

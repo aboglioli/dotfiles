@@ -1,7 +1,7 @@
 setxkbmap es &
 xcompmgr -n &
 wmname LG3D &
-feh --bg-scale ~/Imagenes/background.jpg
+feh --bg-scale ~/.background.jpg
 xrdb -merge ~/.Xresources
 
 nm-applet &

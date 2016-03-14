@@ -218,6 +218,7 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-notes'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'godlygeek/tabular'
 " -----------------------------------------
 
 " JShint :)
@@ -862,6 +863,8 @@ let g:UltiSnipsExpandTrigger           = '<tab>'
 let g:UltiSnipsJumpForwardTrigger      = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 if has('gui_running')
     set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
     set guioptions-=m  "remove menu bar
@@ -870,8 +873,8 @@ if has('gui_running')
     set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
-    set background=light
-    colorscheme lucius
+    set background=dark
+    colorscheme luna
 else
     set background=dark
     colorscheme luna
