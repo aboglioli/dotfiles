@@ -4,6 +4,7 @@ SRC_DIR=$PWD
 # Remove old files
 rm ~/.bashrc
 rm ~/.conkyrc
+rm ~/.conky/timerc
 rm ~/.i3/config
 rm ~/.i3status.conf
 rm ~/.rtorrent.rc
@@ -29,6 +30,7 @@ sudo rm /etc/ssh/sshd_config
 # Link files to this folder
 ln -s $SRC_DIR/bash/bashrc ~/.bashrc
 ln -s $SRC_DIR/conky/conkyrc ~/.conkyrc
+ln -s $SRC_DIR/conky/timerc ~/.conky/timerc
 ln -s $SRC_DIR/i3/config ~/.i3/config
 ln -s $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -s $SRC_DIR/rtorrent/rtorrent.rc ~/.rtorrent.rc

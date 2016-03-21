@@ -64,6 +64,7 @@ alias app="cd ~/Programas/Instalados"
 alias dev="cd ~/Desarrollo"
 alias lab="cd ~/Lab"
 alias temp="cd ~/Temporal"
+alias utn="cd ~/Documentos/UTN"
 
 alias vimrc="gvim ~/.vimrc"
 

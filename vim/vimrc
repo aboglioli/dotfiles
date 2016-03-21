@@ -90,17 +90,17 @@ NeoBundle 'Raimondi/delimitMate'
 " need to be properly configured.
 " I just enable it, with default config,
 " many false positive but still usefull
-NeoBundle 'scrooloose/syntastic'
-" Install jshint and csslint for syntastic
-" Path to jshint if it not installed, then use local installation
-if isNpmInstalled
-    if !executable(expand(s:defaultNodeModules . 'jshint'))
-        silent ! echo 'Installing jshint' && npm --prefix ~/.vim/ install jshint
-    endif
-    if !executable(expand(s:defaultNodeModules . 'csslint'))
-        silent ! echo 'Installing csslint' && npm --prefix ~/.vim/ install csslint
-    endif
-endif
+" NeoBundle 'scrooloose/syntastic'
+" " Install jshint and csslint for syntastic
+" " Path to jshint if it not installed, then use local installation
+" if isNpmInstalled
+"     if !executable(expand(s:defaultNodeModules . 'jshint'))
+"         silent ! echo 'Installing jshint' && npm --prefix ~/.vim/ install jshint
+"     endif
+"     if !executable(expand(s:defaultNodeModules . 'csslint'))
+"         silent ! echo 'Installing csslint' && npm --prefix ~/.vim/ install csslint
+"     endif
+" endif
 
 " Great file system explorer, it appears when you open dir in vim
 " Allow modification of dir, and may other things
@@ -210,12 +210,12 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'Shutnik/jshint2.vim'
+" NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'xolox/vim-misc'
-NeoBundle 'xolox/vim-notes'
+" NeoBundle 'xolox/vim-notes'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'godlygeek/tabular'
@@ -447,7 +447,7 @@ imap <expr><CR> neosnippet#expandable_or_jumpable() ?
 " vim-airline
 
 " Colorscheme for airline
-let g:airline_theme='solarized'
+let g:airline_theme='badwolf'
 
 " Set custom left separator
 let g:airline_left_sep = '▶'
@@ -874,9 +874,9 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme luna
+    colorscheme kruby
 else
     set background=dark
-    colorscheme luna
+    colorscheme kruby
 endif
 " -----------------------------------------
