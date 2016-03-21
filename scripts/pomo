@@ -58,9 +58,7 @@ do
     esac
 done
 
-if [ -n "$1" ]; then
-    MESSAGE="$1"
-elif [ -z "$MESSAGE" ]; then
+if [ -z "$MESSAGE" ]; then
     MESSAGE="Break!"
 fi
 
