@@ -5,6 +5,7 @@ SRC_DIR=$PWD
 rm ~/.bashrc
 rm ~/.conkyrc
 rm ~/.conky/timerc
+rm ~/.dunstrc
 rm ~/.i3/config
 rm ~/.i3status.conf
 rm ~/.rtorrent.rc
@@ -17,6 +18,7 @@ rm ~/.fonts.conf
 rm ~/.Xresources
 rm ~/.synergy.conf
 rm ~/.background.jpg
+rm ~/.notification.ogg
 
 rm ~/.config/synapse/config.json
 rm ~/.config/terminator/config
@@ -31,6 +33,7 @@ sudo rm /etc/ssh/sshd_config
 ln -s $SRC_DIR/bash/bashrc ~/.bashrc
 ln -s $SRC_DIR/conky/conkyrc ~/.conkyrc
 ln -s $SRC_DIR/conky/timerc ~/.conky/timerc
+ln -s $SRC_DIR/dunst/dunstrc ~/.dunstrc
 ln -s $SRC_DIR/i3/config ~/.i3/config
 ln -s $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -s $SRC_DIR/rtorrent/rtorrent.rc ~/.rtorrent.rc
@@ -43,6 +46,7 @@ ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
 ln -s $SRC_DIR/Xresources ~/.Xresources
 ln -s $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
 ln -s $SRC_DIR/background.jpg ~/.background.jpg
+ln -s $SRC_DIR/notification.ogg ~/.notification.ogg
 
 ln -s $SRC_DIR/synapse/config.json ~/.config/synapse/config.json
 ln -s $SRC_DIR/terminator/config ~/.config/terminator/config

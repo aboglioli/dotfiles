@@ -40,4 +40,4 @@ minimum_size 350 0
 TEXT
 # ${color red} ${exec date +"%H:%M:%S, %A %d/%m/%Y"}
 $alignr ${color white} ${exec date +"%H:%M:%S"}
-$alignr ${color gray} ${exec date +"%A %d/%m/%Y"}
+$alignr ${color gray} ${exec date +"%A, %d/%m/%Y"}

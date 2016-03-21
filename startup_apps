@@ -8,5 +8,6 @@ nm-applet &
 pulseaudio -D &
 conky &
 conky -c ~/.conky/timerc &
+dunst -conf ~/.dunstrc &
 dropbox &
 #synapse -s &
