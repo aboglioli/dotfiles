@@ -1,4 +1,12 @@
 setxkbmap es &
+
+export EDITOR=vim
+export VISUAL=$EDITOR
+export GIT_EDITOR=$EDITOR
+export PAGER=less
+export BROWSER=chromium
+export AWT_TOOLKIT=MToolkit
+
 xcompmgr -n &
 wmname LG3D &
 feh --bg-scale ~/.background.jpg

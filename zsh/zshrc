@@ -56,12 +56,20 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/home/kiriost/Dropbox/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
 export TERM=xterm-256color
+export EDITOR=vim
+export VISUAL=$EDITOR
+export GIT_EDITOR=$EDITOR
+export PAGER=less
+export BROWSER=firefox
+export AWT_TOOLKIT=MToolkit
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Aliases
 alias app="cd ~/Programas/Instalados"
-alias dev="cd ~/Desarrollo"
+alias repo="cd ~/Repositorios"
 alias lab="cd ~/Lab"
 alias temp="cd ~/Temporal"
 alias utn="cd ~/Documentos/UTN"
