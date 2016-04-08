@@ -139,6 +139,9 @@ bindsym XF86TouchpadToggle exec ~/Script/toggletouchpad.sh # toggle touchpad
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 
+# Take screenshot
+bindsym Print exec scrot ~/Imagenes/Screenshot/%Y-%m-%d_%s_$wx$h.png
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if avai
 bar {

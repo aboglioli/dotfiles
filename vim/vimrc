@@ -874,7 +874,7 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme badwolf
+    colorscheme gruvbox
 else
     set background=dark
     colorscheme badwolf

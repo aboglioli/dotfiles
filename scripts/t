@@ -18,7 +18,7 @@ do
             ;;
         -p | --pomodore)
             TITLE="Pomodore timer"
-            MESSAGE="Pomodore over"
+            MESSAGE="Break!"
             TIMER=1500
             shift
             ;;
@@ -48,7 +48,7 @@ do
     esac
 done
 
-echo -e "${RED}Timer set for ${ORANGE}$(($TIMER/60)) ${RED}minutes"
+echo -e "${RED}Timer set for ${ORANGE}$TIMER"
 
 sleep $TIMER && \
     notify-send "$TITLE" "$MESSAGE" && \

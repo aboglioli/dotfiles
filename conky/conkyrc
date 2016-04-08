@@ -22,7 +22,7 @@ gap_y 20
 alignment top_left
 
 #behaviour
-update_interval 1
+update_interval 5
 
 #colour
 default_color  FFFFFF
@@ -43,14 +43,12 @@ ${color red}× ${color #aaaaaa}System: $color $sysname $kernel ($uptime)
 
 ${color red}× ${color #aaaaaa}Battery: $color ${battery_percent BAT0}% ($acpiacadapter)
     ${color #555555}${battery_bar 4 BAT0}
-
 ${color red}× ${color #aaaaaa}Temperature: $color ${acpitemp} Cº
 
 ${color red}× ${color #aaaaaa}CPU: $color${cpu cpu0}%
     ${color #555555}${cpugraph 25,285 555555 ffffff}
     ${color gray}-   ${color #aaaaaa}Processes:$color $processes  ${color #aaaaaa}Running:$color $running_processes
     ${color gray}-   ${color #aaaaaa}Frequency (in MHz):$color ${freq 1} ${freq 2} ${freq 3} ${freq 4}
-
 ${color red}× ${color #aaaaaa}RAM:$color $mem/$memmax ($memperc%)
     ${color #555555}${memgraph 25,285 555555 ffffff}
     ${color gray}-   ${color #aaaaaa}Swap:$color $swap/$swapmax ($swapperc%)
@@ -60,7 +58,6 @@ ${color red}× ${color #aaaaaa}File systems:
         ${color #555555}${fs_bar 4 /}
     ${color gray}-   ${color #aaaaaa}/home: $color${fs_used /home}/${fs_size /home}
         ${color #555555}${fs_bar 4 /home}
-
 ${color red}× ${color #aaaaaa}Wi-Fi:
     ${color gray}-   ${color #aaaaaa}Up:$color ${upspeed wlp2s0}
     ${color gray}-   ${color #aaaaaa}Down:$color ${downspeed wlp2s0}
