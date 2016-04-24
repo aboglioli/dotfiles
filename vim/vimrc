@@ -866,7 +866,7 @@ let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 if has('gui_running')
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+    set guifont=InputMono\ 10
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
@@ -874,7 +874,7 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme gruvbox
+    colorscheme badwolf
 else
     set background=dark
     colorscheme badwolf
