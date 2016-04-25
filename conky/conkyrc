@@ -38,6 +38,9 @@ use_spacer no
 minimum_size 350 0
 
 TEXT
+${color white} ${exec date +"%H:%M"}
+${color gray} ${exec date +"%A, %d/%m/%Y"}
+
 ${color white}
 ${color red}× ${color #aaaaaa}System: $color $sysname $kernel ($uptime)
 

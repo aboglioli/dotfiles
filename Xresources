@@ -60,7 +60,7 @@ Xft*hinting:            full
 ! u r x v t
 
 URxvt*geometry:         112x22
-URxvt*font:            xft:Inconsolata:size=12
+URxvt*font:            xft:Ubuntu\ Mono:size=12
 URxvt*urlLauncher:         chromium
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true

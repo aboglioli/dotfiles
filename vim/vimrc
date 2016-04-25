@@ -219,6 +219,7 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'tmhedberg/matchit'
 " -----------------------------------------
 
 " JShint :)
@@ -848,8 +849,6 @@ nnoremap <F2> :w<CR>
 nnoremap <F3> :echo @%<CR>
 nnoremap <silent><leader>b :CtrlPBuffer<CR>
 nnoremap <silent><leader>m :CtrlPMRU<CR>
-nmap <silent><leader>v :bprevious<CR>
-nmap <silent><leader>n :bnext<CR>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
@@ -874,7 +873,7 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme badwolf
+    colorscheme base16-atelierforest
 else
     set background=dark
     colorscheme badwolf
