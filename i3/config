@@ -169,13 +169,13 @@ force_focus_wrapping yes
 ## THEME ###
 set $FOCUS #dd0000
 set $UNFOCUS #49524a
-set $INACTIVE #5c5b57
-set $FOCUS_TEXT #49524a
-set $UNFOCUS_TEXT #dde8f0
+set $INACTIVE #999999
+set $FOCUS_TEXT #eeeeee
+set $UNFOCUS_TEXT #aaaaaa
 
 # Layout colors 	    bord 	bg 		text    indicator (split)
 client.focused 			$FOCUS $FOCUS $FOCUS_TEXT $FOCUS
-client.focused_inactive $INACTIVE $INACTIVE $FOCUS $INACTIVE
+client.focused_inactive $INACTIVE $INACTIVE $FOCUS_TEXT $INACTIVE
 client.unfocused 		$UNFOCUS $UNFOCUS $UNFOCUS_TEXT $UNFOCUS
 client.urgent 			$FOCUS $FOCUS $FOCUS_TEXT $FOCUS
 client.background 		$UNFOCUS

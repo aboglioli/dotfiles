@@ -76,7 +76,7 @@ alias utn="cd ~/Documentos/UTN"
 
 alias vimrc="gvim ~/.vimrc"
 
-export PATH="./node_modules/.bin:$PATH"
+export PATH="/usr/local/heroku/bin:./node_modules/.bin:$PATH"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
