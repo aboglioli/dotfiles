@@ -17,6 +17,8 @@
 #define base0E #b854d4
 #define base0F #d43552
 
+Xcursor.theme: PolarCursorTheme
+
 *.foreground:   base05
 *.background:   base00
 *.cursorColor:  base05

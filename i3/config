@@ -163,7 +163,7 @@ bar {
 # MY THINGS
 new_window pixel 2
 new_float pixel 2
-focus_follows_mouse yes
+focus_follows_mouse no
 force_focus_wrapping yes
 
 ## THEME ###

@@ -12,9 +12,10 @@ wmname LG3D &
 feh --bg-scale ~/.background.jpg
 xrdb -merge ~/.Xresources
 
+synapse -s &
 dunst -conf ~/.dunstrc &
 pulseaudio -D &
-synapse -s &
 nm-applet &
 conky &
+unclutter -idle 1 -jitter 5 -noevents -root &
 # dropbox &
