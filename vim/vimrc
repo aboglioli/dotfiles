@@ -210,16 +210,17 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'editorconfig/editorconfig-vim'
-" NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'xolox/vim-misc'
-" NeoBundle 'xolox/vim-notes'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'tmhedberg/matchit'
+NeoBundle 'shawncplus/phpcomplete.vim'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'airblade/vim-gitgutter'
 " -----------------------------------------
 
 " JShint :)
@@ -856,7 +857,12 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " -----------------------------------------
 
 " ------------ My config -----------------
-let g:SuperTabDefaultCompletionType    = '<C-n>'
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+let g:SuperTabDefaultCompletionType    = '<c-n>'
 " let g:SuperTabCrMapping                = 0
 let g:UltiSnipsExpandTrigger           = '<tab>'
 let g:UltiSnipsJumpForwardTrigger      = '<tab>'
@@ -870,7 +876,7 @@ if has('gui_running')
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
+        set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
     set background=dark

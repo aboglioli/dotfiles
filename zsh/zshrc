@@ -78,7 +78,7 @@ alias vimrc="gvim ~/.vimrc"
 
 alias tl="tree -L 2"
 
-export PATH="/usr/local/heroku/bin:./node_modules/.bin:$PATH"
+export PATH="/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
