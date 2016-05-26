@@ -7,7 +7,8 @@ export PAGER=less
 export BROWSER=chromium
 export AWT_TOOLKIT=MToolkit
 
-xcompmgr -n &
+# xcompmgr -n &
+compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b &
 wmname LG3D &
 feh --bg-scale ~/.background.jpg
 xrdb -merge ~/.Xresources
@@ -16,6 +17,6 @@ synapse -s &
 dunst -conf ~/.dunstrc &
 pulseaudio -D &
 nm-applet &
-conky &
+# conky &
 unclutter -idle 1 -jitter 5 -noevents -root &
 # dropbox &

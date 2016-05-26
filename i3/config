@@ -5,7 +5,7 @@ font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -e bash -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
+bindsym $mod+Menu exec urxvt -name dropdown -e bash -c "tmux new-session -A -s main"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -200,14 +200,7 @@ bindsym $mod+Shift+d exec i3-dmenu-desktop
 
 bindsym $mod+F3 exec i3lock -c 554444 -p default -d -n
 
-# mode "(s)uspend (r)estart shut(d)own" { */
-#         bindsym s exec gksudo 'systemctl suspend'; mode "default" */
-#         bindsym r exec gksudo 'shutdown -r now'; mode "default" */
-#         bindsym d exec gksudo 'shutdown -h now'; mode "default" */
-#  */
-#         bindsym Return mode "default" */
-#         bindsym Escape mode "default" */
-# } */
-# bindsym $mod+n mode "(s)uspend (r)estart shut(d)own" */
+## quick terminal
+# for_window [instance="dropdown"] floating enable;
 
 exec ~/.startup_apps

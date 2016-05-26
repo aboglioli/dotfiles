@@ -203,7 +203,6 @@ NeoBundle 'kana/vim-arpeggio'
 NeoBundle 'aklt/plantuml-syntax'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'evidens/vim-twig'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ramitos/jsctags'
 NeoBundle 'majutsushi/tagbar'
@@ -219,8 +218,10 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'tmhedberg/matchit'
 NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'ervandew/supertab'
+" NeoBundle 'ervandew/supertab'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'Glench/Vim-Jinja2-Syntax'
+NeoBundle 'jiangmiao/auto-pairs'
 " -----------------------------------------
 
 " JShint :)
@@ -845,11 +846,12 @@ endif
 
 
 " ------------ My keymaps -----------------
-nnoremap <F12> :sh<CR>
-nnoremap <F2> :w<CR>
+nnoremap <silent> <F12> :w<CR>
 nnoremap <F3> :echo @%<CR>
 nnoremap <silent><leader>b :CtrlPBuffer<CR>
 nnoremap <silent><leader>m :CtrlPMRU<CR>
+map <M-Left> <C-T>
+map <M-Right> <C-]>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>

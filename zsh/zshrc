@@ -62,14 +62,13 @@ export EDITOR=vim
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR
 export PAGER=less
-export BROWSER=firefox
+export BROWSER=chromium
 export AWT_TOOLKIT=MToolkit
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Aliases
-alias app="cd ~/Programas/Instalados"
-alias repo="cd ~/Repositorios"
+alias dev="cd ~/Desarrollo"
 alias lab="cd ~/Lab"
 alias temp="cd ~/Temporal"
 alias utn="cd ~/Documentos/UTN"
