@@ -5,7 +5,7 @@ font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Menu exec urxvt -name dropdown -e bash -c "tmux new-session -A -s main"
+bindsym $mod+Menu exec --no-startup-id urxvt -name dropdown -e bash -c "tmux new-session -A -s main"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -202,5 +202,7 @@ bindsym $mod+F3 exec i3lock -c 554444 -p default -d -n
 
 ## quick terminal
 # for_window [instance="dropdown"] floating enable;
+# for_window [instance="dropdown"] move position 33px 34px; resize shrink height 700px; resize grow width 1300px;
 
 exec ~/.startup_apps
+exec --no-startup-id synapse -s &
