@@ -32,8 +32,8 @@ URxvt*color15 : #EEEEEC
 
 !urxvt fonts:
 
-URxvt*font: xft:Monospace:pixelsize=12
-URxvt*boldFont: xft:Monospace:bold:pixelsize=12
+! URxvt*font: xft:Monospace:pixelsize=12
+! URxvt*boldFont: xft:Monospace:bold:pixelsize=12
 
 
 !urxvt extensions:
@@ -65,13 +65,13 @@ URxvt.tabbed.title: no
 !
 ! normal font
 !URxvt.font:xft:YaHei Consolas Hybrid:pixelsize=14:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
-!URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
-!URxvt.font:xft:DejaVu Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
+! URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
+! URxvt.font:xft:DejaVu Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
 URxvt.font:xft:Monaco:pixelsize=12:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:antialias=true
 !URxvt.font:xft:ProFont:pixelsize=12:antialias=true,xft:WenQuanYi ZenHei:pixelsize=15:antialias=true
 ! bold font
 !URxvt.boldFont:xft:YaHei Consolas Hybrid:pixelsize=14:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
-!URxvt.boldFont:xft:Bitstream Vera Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
-!URxvt.boldFont:xft:DejaVu Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
+! URxvt.boldFont:xft:Bitstream Vera Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
+! URxvt.boldFont:xft:DejaVu Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
 URxvt.boldFont:xft:Monaco:pixelsize=12:Bold:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:Bold:antialias=true
 !URxvt.boldFont:xft:ProFont:pixelsize=12:antialias=true,xft:WenQuanYi ZenHei:pixelsize=15:antialias=trueRxvt*scrollColor:        #000000

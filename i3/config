@@ -196,13 +196,13 @@ bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move container to output right
 
 #bindsym's
-bindsym $mod+Shift+d exec i3-dmenu-desktop
+bindsym $mod+BackSpace exec --no-startup-id j4-dmenu-desktop
 
 bindsym $mod+F3 exec i3lock -c 554444 -p default -d -n
+bindsym $mod+Shift+semicolon exec gksudo "shutdown -h now"
 
 ## quick terminal
 # for_window [instance="dropdown"] floating enable;
 # for_window [instance="dropdown"] move position 33px 34px; resize shrink height 700px; resize grow width 1300px;
 
 exec ~/.startup_apps
-exec --no-startup-id synapse -s &

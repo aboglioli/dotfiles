@@ -1,4 +1,4 @@
- let mapleader = ','
+let mapleader = ','
 
 "--------------------------------------------------
 " NeoBundle Init
@@ -126,7 +126,7 @@ NeoBundle 'tomtom/tcomment_vim'
 " Best git wrapper for vim
 " But with my workflow, i really rarely use it
 " just Gdiff and Gblame sometimes
-NeoBundle 'tpope/vim-fugitive'
+" NeoBundle 'tpope/vim-fugitive'
 
 " Fix-up dot command behavior
 " it's kind of service plugin
@@ -200,6 +200,8 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'kana/vim-arpeggio'
 
 " ------------ My bundles -----------------
+" NeoBundle 'Shougo/unite.vim'
+NeoBundle 'm2mdas/phpcomplete-extended'
 NeoBundle 'aklt/plantuml-syntax'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
@@ -214,14 +216,15 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'SirVer/ultisnips'
-" NeoBundle 'honza/vim-snippets'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'tmhedberg/matchit'
 NeoBundle 'shawncplus/phpcomplete.vim'
-" NeoBundle 'ervandew/supertab'
+NeoBundle 'ervandew/supertab'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'itchyny/lightline.vim'
 " -----------------------------------------
 
 " JShint :)
@@ -254,10 +257,9 @@ NeoBundleCheck
 
 "--------------------------------------------------
 " Bundles settings
+"-------------------------
+" Unite
 
-" "-------------------------
-" " Unite
-"
 " " Set unite window height
 " let g:unite_winheight = 10
 "
@@ -294,6 +296,12 @@ NeoBundleCheck
 " " Hotkey for open window with most recent files
 " nnoremap <silent><leader>m :<C-u>Unite file_mru <CR>
 "
+" " Buffers
+" nnoremap <silent><leader>b :<C-u>Unite buffer <CR>
+"
+" " Files
+" nnoremap <silent><leader>p :<C-u>Unite file <CR>
+"
 " " Hotkey for open history window
 " nnoremap <silent><leader>h :Unite -quick-match -max-multi-lines=2 -start-insert -auto-quit history/yank<CR>
 "
@@ -305,10 +313,10 @@ NeoBundleCheck
 "
 " " Unite-grep
 " nnoremap <silent><leader>/ :Unite grep:. -no-start-insert -no-quit -keep-focus -wrap<CR>
-"
-"
-"
-" "-------------------------
+
+
+
+"-------------------------
 " NERDTree
 
 " Tell NERDTree to display hidden files on startup
@@ -410,7 +418,7 @@ let g:mustache_abbreviations = 1
 " vim-closetag
 
 " Enable for files with this extensions
-let g:closetag_filenames = "*.handlebars,*.html,*.xhtml,*.phtml"
+let g:closetag_filenames = "*.handlebars,*.html,*.xhtml,*.phtml,*.twig"
 
 "-------------------------
 " Tern_for_vim
@@ -449,7 +457,7 @@ nmap <silent> <leader>tn :TernRename<CR>
 " vim-airline
 
 " Colorscheme for airline
-let g:airline_theme='badwolf'
+let g:airline_theme='solarized'
 
 " Set custom left separator
 let g:airline_left_sep = '▶'
@@ -520,6 +528,7 @@ inoremap <expr><C-e> neocomplcache#undo_completion()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
 " For cursor moving in insert mode
 inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
@@ -803,8 +812,8 @@ if has("autocmd")
         " Delete any previosly defined autocommands
         au!
         " Auto reload vim after your cahange it
-        au BufWritePost *.vim source $MYVIMRC | AirlineRefresh
-        au BufWritePost .vimrc source $MYVIMRC | AirlineRefresh
+        au BufWritePost *.vim source $MYVIMRC
+        au BufWritePost .vimrc source $MYVIMRC
 
         " Restore cursor position :help last-position-jump
         au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -847,23 +856,34 @@ endif
 " ------------ My keymaps -----------------
 nnoremap <silent> <F12> :w<CR>
 nnoremap <F3> :echo @%<CR>
+
 nnoremap <silent><leader>b :CtrlPBuffer<CR>
 nnoremap <silent><leader>m :CtrlPMRU<CR>
-map <M-Left> <C-T>
-map <M-Right> <C-]>
+
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+" nnoremap <C-p> :Unite file_rec/async<cr>
+
+nnoremap <leader>% :MtaJumpToOtherTag<cr>
 " -----------------------------------------
 
 " ------------ My config -----------------
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" let g:lightline = {
+"             \ 'colorscheme': 'wombat',
+"             \ 'component': {
+"             \   'readonly': '%{&readonly?"":""}',
+"             \ },
+"             \ 'separator': { 'left': '', 'right': '' },
+"             \ 'subseparator': { 'left': '', 'right': '' }
+"             \ }
 
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
-let g:SuperTabDefaultCompletionType    = '<c-n>'
+" let g:SuperTabDefaultCompletionType    = '<c-n>'
 " let g:SuperTabCrMapping                = 0
 let g:UltiSnipsExpandTrigger           = '<tab>'
 let g:UltiSnipsJumpForwardTrigger      = '<tab>'
@@ -877,7 +897,7 @@ if has('gui_running')
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
-        set guioptions-=L  "remove left-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
     set background=dark
