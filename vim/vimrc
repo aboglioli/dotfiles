@@ -201,9 +201,8 @@ NeoBundle 'kana/vim-arpeggio'
 
 " ------------ My bundles -----------------
 " NeoBundle 'Shougo/unite.vim'
-NeoBundle 'm2mdas/phpcomplete-extended'
-NeoBundle 'aklt/plantuml-syntax'
-NeoBundle 'rust-lang/rust.vim'
+" NeoBundle 'aklt/plantuml-syntax'
+" NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'ramitos/jsctags'
@@ -218,13 +217,12 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'tmhedberg/matchit'
-NeoBundle 'shawncplus/phpcomplete.vim'
+" NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'itchyny/lightline.vim'
 " -----------------------------------------
 
 " JShint :)
@@ -685,14 +683,14 @@ set expandtab
 set smarttab
 
 " number of spaces to use for each step of indent
-set shiftwidth=4
+set shiftwidth=2
 
 " Number of spaces that a Tab in the file counts for
-set tabstop=4
+set tabstop=2
 
 " Same but for editing operation (not shure what exactly does it means)
 " but in most cases tabstop and softtabstop better be the same
-set softtabstop=4
+set softtabstop=2
 
 " Round indent to multiple of 'shiftwidth'.
 " Indentation always be multiple of shiftwidth
