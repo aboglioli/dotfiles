@@ -17,5 +17,5 @@ dunst -conf ~/.dunstrc &
 pulseaudio -D &
 nm-applet &
 # conky &
-unclutter -idle 1 -jitter 5 -noevents -root &
+# unclutter -idle 1 -jitter 5 -noevents -root &
 # dropbox &
