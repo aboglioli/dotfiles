@@ -890,8 +890,8 @@ if has('gui_running')
     set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
-    set background=light
-    colorscheme lucius
+    set background=dark
+    colorscheme gruvbox
 else
     set background=dark
     colorscheme gruvbox

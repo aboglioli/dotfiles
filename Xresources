@@ -1,7 +1,7 @@
 !urxvt color scheme:
 
-URxvt*background: #2B2B2B
-URxvt*foreground: #DEDEDE
+URxvt*background: #3D291E
+URxvt*foreground: #FFFFFF
 
 URxvt*colorUL: #86a2b0
 
@@ -32,8 +32,8 @@ URxvt*color15 : #EEEEEC
 
 !urxvt fonts:
 
-URxvt*font: xft:Monospace:pixelsize=13
-URxvt*boldFont: xft:Monospace:bold:pixelsize=13
+URxvt*font: xft:Inconsolata:pixelsize=15
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=15
 
 
 !urxvt extensions:
