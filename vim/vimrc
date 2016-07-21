@@ -223,6 +223,8 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'mattn/webapi-vim'
 " -----------------------------------------
 
 " JShint :)
@@ -671,6 +673,9 @@ set colorcolumn=+1
 " Tab options
 
 " Copy indent from previous line
+filetype on
+filetype plugin on
+filetype indent on
 set autoindent
 
 " Enable smart indent. it add additional indents whe necessary
@@ -870,9 +875,6 @@ nnoremap <leader>% :MtaJumpToOtherTag<cr>
 " -----------------------------------------
 
 " ------------ My config -----------------
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-
 " let g:SuperTabDefaultCompletionType    = '<c-n>'
 " let g:SuperTabCrMapping                = 0
 let g:UltiSnipsExpandTrigger           = '<tab>'
@@ -881,6 +883,12 @@ let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_cmd='CtrlP :pwd'
+
+let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_open_browser_after_post = 1
+
+set splitright
+set splitbelow
 
 if has('gui_running')
     set guifont=Inconsolata\ 11
@@ -891,7 +899,7 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme gruvbox
+    colorscheme molokai
 else
     set background=dark
     colorscheme gruvbox
