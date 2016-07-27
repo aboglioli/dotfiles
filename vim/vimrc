@@ -682,7 +682,8 @@ set autoindent
 set smartindent
 
 " Replace tabs with spaces
-set expandtab
+" set expandtab
+set noexpandtab
 
 " Whe you hit tab at start of line, indent added according to shiftwidth value
 set smarttab
@@ -695,12 +696,15 @@ set tabstop=2
 
 " Same but for editing operation (not shure what exactly does it means)
 " but in most cases tabstop and softtabstop better be the same
-set softtabstop=2
+set softtabstop=0
 
 " Round indent to multiple of 'shiftwidth'.
 " Indentation always be multiple of shiftwidth
 " Applies to  < and > command
 set shiftround
+
+set copyindent
+set preserveindent
 
 "--------------------------------------------------
 " Search options

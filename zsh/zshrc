@@ -75,13 +75,11 @@ alias utn="cd ~/Documentos/UTN"
 
 alias vimrc="gvim ~/.vimrc"
 
+alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias tl="tree -L 2"
-
-alias cw="cd ~/Desarrollo/pedro/super-cerebrito"
 
 export PATH="/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
 
-alias tt='cd "./$(git rev-parse --show-cdup)"'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

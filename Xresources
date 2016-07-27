@@ -32,8 +32,8 @@ URxvt*color15 : #EEEEEC
 
 !urxvt fonts:
 
-URxvt*font: xft:Inconsolata:pixelsize=15
-URxvt*boldFont: xft:Inconsolata:bold:pixelsize=15
+URxvt*font: xft:Anonymous Pro:pixelsize=15
+URxvt*boldFont: xft:Anonymous Pro:bold:pixelsize=15
 
 
 !urxvt extensions:
