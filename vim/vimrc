@@ -1,3 +1,5 @@
+set nocompatible
+
 let mapleader = ','
 
 "--------------------------------------------------
@@ -331,46 +333,46 @@ nmap <silent> <leader>f :NERDTreeFind<CR>
 "-------------------------
 " Syntastic
 
-function! s:FindSyntasticExecPath(toolName)
-    if executable(a:toolName)
-        return a:toolName
-    endif
-
-    let fullPath=fnamemodify('.', ':p:h')
-    while fullPath != fnamemodify('/', ':p:h')
-        if filereadable(expand(fullPath . '/node_modules/.bin/' . a:toolName))
-            return fullPath . '/node_modules/.bin/' . a:toolName
-        endif
-        let fullPath = fnamemodify(fullPath . '/../', ':p:h')
-    endwhile
-
-    return  s:defaultNodeModules . a:toolName
-
-endfunction
-
-" setting up jshint csslint and jscs if available
-let g:syntastic_javascript_jshint_exec = s:FindSyntasticExecPath('jshint')
-let g:syntastic_javascript_jscs_exec = s:FindSyntasticExecPath('jscs')
-let g:syntastic_css_csslint_exec= s:FindSyntasticExecPath('csslint')
-
-" Enable autochecks
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_signs=1
-
-" For correct works of next/previous error navigation
-let g:syntastic_always_populate_loc_list = 1
-
-" check json files with jshint
-let g:syntastic_filetype_map = { "json": "javascript", }
-
-let g:syntastic_javascript_checkers = ["jshint", "jscs"]
-
-" open quicfix window with all error found
-nmap <silent> <leader>ll :Errors<cr>
-" previous syntastic error
-nmap <silent> [ :lprev<cr>
-" next syntastic error
-nmap <silent> ] :lnext<cr>
+" function! s:FindSyntasticExecPath(toolName)
+"     if executable(a:toolName)
+"         return a:toolName
+"     endif
+"
+"     let fullPath=fnamemodify('.', ':p:h')
+"     while fullPath != fnamemodify('/', ':p:h')
+"         if filereadable(expand(fullPath . '/node_modules/.bin/' . a:toolName))
+"             return fullPath . '/node_modules/.bin/' . a:toolName
+"         endif
+"         let fullPath = fnamemodify(fullPath . '/../', ':p:h')
+"     endwhile
+"
+"     return  s:defaultNodeModules . a:toolName
+"
+" endfunction
+"
+" " setting up jshint csslint and jscs if available
+" let g:syntastic_javascript_jshint_exec = s:FindSyntasticExecPath('jshint')
+" let g:syntastic_javascript_jscs_exec = s:FindSyntasticExecPath('jscs')
+" let g:syntastic_css_csslint_exec= s:FindSyntasticExecPath('csslint')
+"
+" " Enable autochecks
+" let g:syntastic_check_on_open=1
+" let g:syntastic_enable_signs=1
+"
+" " For correct works of next/previous error navigation
+" let g:syntastic_always_populate_loc_list = 1
+"
+" " check json files with jshint
+" let g:syntastic_filetype_map = { "json": "javascript", }
+"
+" let g:syntastic_javascript_checkers = ["jshint", "jscs"]
+"
+" " open quicfix window with all error found
+" nmap <silent> <leader>ll :Errors<cr>
+" " previous syntastic error
+" nmap <silent> [ :lprev<cr>
+" " next syntastic error
+" nmap <silent> ] :lnext<cr>
 
 "-------------------------
 " Fugitive
@@ -435,7 +437,7 @@ nmap <silent> <leader>tn :TernRename<CR>
 " Solarized
 
 " if You have problem with background, uncomment this line
-" let g:solarized_termtrans=1
+let g:solarized_termtrans=1
 
 "-------------------------
 " neosnippets
@@ -611,6 +613,7 @@ set list
 
 " Setting up how to display whitespace characters
 set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
+" set listchars=tab:·\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
 
 " Wrap line only on characters in breakat list like ^I!@*-+;:,./?
 " Useless with nowrap
@@ -625,10 +628,12 @@ set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
 " set sidescroll=4
 
 " Numbers of rows to keep to the left and to the right off the screen
-set scrolloff=10
+" set scrolloff=10
+set scrolloff=0
 
 " Numbers of columns to keep to the left and to the right off the screen
-set sidescrolloff=10
+" set sidescrolloff=10
+set sidescrolloff=0
 
 " Vim will move to the previous/next line after reaching first/last char in
 " the line with this commnad (you can add 'h' or 'l' here as well)
@@ -881,6 +886,8 @@ nnoremap <leader>% :MtaJumpToOtherTag<cr>
 " ------------ My config -----------------
 " let g:SuperTabDefaultCompletionType    = '<c-n>'
 " let g:SuperTabCrMapping                = 0
+set linespace=1
+
 let g:UltiSnipsExpandTrigger           = '<tab>'
 let g:UltiSnipsJumpForwardTrigger      = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
@@ -895,7 +902,7 @@ set splitright
 set splitbelow
 
 if has('gui_running')
-    set guifont=Inconsolata\ 11
+    set guifont=Anonymous\ Pro\ 11
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
