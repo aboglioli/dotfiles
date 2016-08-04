@@ -33,6 +33,9 @@ ln -s $SRC_DIR/startup_apps ~/.startup_apps
 rm ~/.zshrc
 ln -s $SRC_DIR/zsh/zshrc ~/.zshrc
 
+rm ~/.ackrc
+ln -s $SRC_DIR/ack/ackrc ~/.ackrc
+
 rm ~/.fonts.conf
 ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
 

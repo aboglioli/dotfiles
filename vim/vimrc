@@ -227,6 +227,7 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mileszs/ack.vim'
 " -----------------------------------------
 
 " JShint :)
@@ -881,6 +882,10 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " nnoremap <C-p> :Unite file_rec/async<cr>
 
 nnoremap <leader>% :MtaJumpToOtherTag<cr>
+
+" Select text pasted
+nnoremap <leader>v V`]
+inoremap jj <ESC>
 " -----------------------------------------
 
 " ------------ My config -----------------
@@ -902,7 +907,7 @@ set splitright
 set splitbelow
 
 if has('gui_running')
-    set guifont=Anonymous\ Pro\ 11
+    set guifont=Droid\ Sans\ Mono\ 10
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar

@@ -32,8 +32,8 @@ URxvt*color15 : #EEEEEC
 
 !urxvt fonts:
 
-URxvt*font: xft:Anonymous Pro:pixelsize=16
-URxvt*boldFont: xft:Anonymous Pro:bold:pixelsize=16
+URxvt*font: xft:Ubuntu Mono:pixelsize=16
+URxvt*boldFont: xft:Ubuntu Mono:bold:pixelsize=16
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
