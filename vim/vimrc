@@ -225,9 +225,11 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'mattn/webapi-vim'
+" NeoBundle 'mattn/gist-vim'
+" NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mileszs/ack.vim'
+NeoBundle 'mtth/scratch.vim'
+NeoBundle 'lrvick/Conque-Shell'
 " -----------------------------------------
 
 " JShint :)
@@ -688,8 +690,8 @@ set autoindent
 set smartindent
 
 " Replace tabs with spaces
-" set expandtab
-set noexpandtab
+set expandtab
+" set noexpandtab
 
 " Whe you hit tab at start of line, indent added according to shiftwidth value
 set smarttab

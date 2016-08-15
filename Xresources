@@ -1,81 +1,93 @@
-!urxvt color scheme:
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
 
-URxvt*background: #3D291E
-URxvt*foreground: #FFFFFF
+Xft.dpi:                    96
+Xft.antialias:              false
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
 
-URxvt*colorUL: #86a2b0
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            50
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold:           false
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+URxvt*font: xft:Monospace:pixelsize=14
+URxvt*boldFont: xft:Monospace:pixelsize=14
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+!!Source http://github.com/altercation/solarized
+
+! PaperColour Theme
+
+URxvt.foreground: #4D4D4C
+URxvt.background: #EEEEEE
 
 ! black
-URxvt*color0  : #2E3436
-URxvt*color8  : #555753
+URxvt.color0: #EDEDED
+URxvt.color8: #969694
+
 ! red
-URxvt*color1  : #CC0000
-URxvt*color9  : #EF2929
+URxvt.color1: #D7005F
+URxvt.color9: #D7005F
+
 ! green
-URxvt*color2  : #4E9A06
-URxvt*color10 : #8AE234
-! yellow
-URxvt*color3  : #C4A000
-URxvt*color11 : #FCE94F
+URxvt.color2: #718C00
+URxvt.color10: #718C00
+
+! yellow / orange
+URxvt.color3: #D75F00
+URxvt.color11: #D75F00
+
 ! blue
-URxvt*color4  : #3465A4
-URxvt*color12 : #729FCF
+
+URxvt.color4: #4271AE
+URxvt.color12: #4271AE
+
 ! magenta
-URxvt*color5  : #75507B
-URxvt*color13 : #AD7FA8
+URxvt.color5: #8959A8
+URxvt.color13: #8959A8
+
 ! cyan
-URxvt*color6  : #06989A
-URxvt*color14 : #34E2E2
+URxvt.color6: #3E999F
+URxvt.color14: #3E999F
+
 ! white
-URxvt*color7  : #D3D7CF
-URxvt*color15 : #EEEEEC
-
-!urxvt fonts:
-
-URxvt*font: xft:Ubuntu Mono:pixelsize=16
-URxvt*boldFont: xft:Ubuntu Mono:bold:pixelsize=16
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-Xft.hintstyle: hintfull
-
-
-!urxvt extensions:
-
-URxvt.perl-ext-common:  default,matcher,tabbedex
-
-!enabling clickable links:
-
-URxvt.urlLauncher:      /usr/bin/google-chrome
-URxvt.matcher.button:   1
-
-!urxvt scrolling options and cursor style:
-
-URxvt*saveLines: 12000
-URxvt*scrollstyle:plain
-URxvt*scrollBar: false
-URxvt*cursorBlink: true
-!URxvt*cursorUnderline: true
-
-! urxvt tabs settings:
-
-URxvt.tabbed.tabbar-fg: 2
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 2
-URxvt.tabbed.tab-bg: 8
-URxvt.tabbed.autohide:  yes
-URxvt.tabbed.new-button:  no
-URxvt.tabbed.title: no
-!
-! normal font
-!URxvt.font:xft:YaHei Consolas Hybrid:pixelsize=14:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
-! URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
-! URxvt.font:xft:DejaVu Sans Mono:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
-! URxvt.font:xft:Monaco:pixelsize=13:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:antialias=true
-!URxvt.font:xft:ProFont:pixelsize=12:antialias=true,xft:WenQuanYi ZenHei:pixelsize=15:antialias=true
-! bold font
-!URxvt.boldFont:xft:YaHei Consolas Hybrid:pixelsize=14:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
-! URxvt.boldFont:xft:Bitstream Vera Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
-! URxvt.boldFont:xft:DejaVu Sans Mono:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
-! URxvt.boldFont:xft:Monaco:pixelsize=13:Bold:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:Bold:antialias=true
-!URxvt.boldFont:xft:ProFont:pixelsize=12:antialias=true,xft:WenQuanYi ZenHei:pixelsize=15:antialias=trueRxvt*scrollColor:        #000000
+URxvt.color7: #4D4D4C
+URxvt.color15: #F5F5F5
