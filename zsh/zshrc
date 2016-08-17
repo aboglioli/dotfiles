@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/home/kiriost/Dropbox/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
-export TERM=xterm-256color
+export TERM=screen-256color
 export EDITOR=vim
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR

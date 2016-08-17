@@ -25,6 +25,10 @@ ln -s $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
 rm ~/.vimrc
 ln -s $SRC_DIR/vim/vimrc ~/.vimrc
 
+rm ~/.config/nvim/init.vim
+mkdir ~/.config/nvim
+ln -s $SRC_DIR/nvim/init.vim ~/.config/nvim/init.vim
+
 rm ~/.xinitrc
 ln -s $SRC_DIR/xinitrc ~/.xinitrc
 rm ~/.startup_apps
