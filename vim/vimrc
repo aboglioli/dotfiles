@@ -202,7 +202,6 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'kana/vim-arpeggio'
 
 " ------------ My bundles -----------------
-" NeoBundle 'Shougo/unite.vim'
 " NeoBundle 'aklt/plantuml-syntax'
 " NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
@@ -431,10 +430,10 @@ let g:closetag_filenames = "*.handlebars,*.html,*.xhtml,*.phtml,*.twig"
 let tern_show_signature_in_pum = 1
 
 " Find all refs for variable under cursor
-nmap <silent> <leader>tr :TernRefs<CR>
-
-" Smart variable rename
-nmap <silent> <leader>tn :TernRename<CR>
+" nmap <silent> <leader>tr :TernRefs<CR>
+"
+" " Smart variable rename
+" nmap <silent> <leader>tn :TernRename<CR>
 
 "-------------------------
 " Solarized
@@ -548,7 +547,7 @@ set completeopt-=preview
 " Arpeggio
 
 " map jk to escape
-call arpeggio#map('i', '', 0, 'jk', '<ESC>')
+" call arpeggio#map('i', '', 0, 'jk', '<ESC>')
 
 "--------------------------------------------------
 
@@ -577,7 +576,7 @@ set autoread
 set ttyfast
 
 " Set character encoding to use in vim
-set encoding=utf-8
+" set encoding=utf-8
 
 " Let vim know what encoding we use in our terminal
 set termencoding=utf-8
@@ -888,8 +887,15 @@ nmap <silent> <A-Right> :wincmd l<CR>
 nnoremap <leader>% :MtaJumpToOtherTag<cr>
 
 " Select text pasted
-nnoremap <leader>v V`]
+nnoremap <leader>v `[v`]
 inoremap jj <ESC>
+
+" Open terminal
+nnoremap <leader>1 :!sh<CR>
+nnoremap <leader>2 :!ctags **/*<CR>
+
+" Clear search
+nnoremap <leader>l :nohlsearch<CR>
 " -----------------------------------------
 
 " ------------ My config -----------------
@@ -903,15 +909,13 @@ let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_cmd='CtrlP :pwd'
-
-let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_open_browser_after_post = 1
+let g:ctrlp_working_path_mode = 0
 
 set splitright
 set splitbelow
 
 if has('gui_running')
-    set guifont=Monospace\ 10
+    set guifont=Inconsolata\ 12
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar

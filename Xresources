@@ -28,8 +28,8 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           true
-URxvt*font: xft:Monospace:pixelsize=13
-URxvt*boldFont: xft:Monospace:pixelsize=13
+URxvt*font: xft:Inconsolata:pixelsize=16:antialias=true
+URxvt*boldFont: xft:Inconsolata:pixelsize=16:antialias=true
 
 ! Fix font space
 URxvt*letterSpace: -1
