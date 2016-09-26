@@ -48,6 +48,7 @@ ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
 
 rm ~/.Xresources
 ln -s $SRC_DIR/Xresources ~/.Xresources
+xrdb -merge ~/.Xresources
 
 rm ~/.synergy.conf
 ln -s $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
