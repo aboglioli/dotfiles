@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="bira"
-ZSH_THEME="avit"
+ZSH_THEME="clean"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -78,7 +78,7 @@ alias vimrc="gvim ~/.vimrc"
 alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias tl="tree -L 2"
 
-export PATH="/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
+export PATH="/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
 
 
 # Preferred editor for local and remote sessions

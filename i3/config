@@ -148,15 +148,15 @@ bindsym Print exec scrot ~/Imagenes/Screenshot/%Y-%m-%d_%s_$wx$h.png
 bar {
     status_command i3status
     mode dock
-    position top
+    position bottom
     font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*
     workspace_buttons yes
     colors {
-        background #3d291e
+        background #550000
         statusline #999999
-        focused_workspace #997777 #aa7777 #ffffff
-        active_workspace #777777 #777777 #f5f5f5
-        inactive_workspace #555555 #555555 #999999
+        focused_workspace #d46a6a #d46a6a #ffffff
+        active_workspace #ff5733 #ff5733 #f5f5f5
+        inactive_workspace #801515 #801515 #999999
         urgent_workspace #2e3436 #9a878f
     }
 }
@@ -168,7 +168,7 @@ focus_follows_mouse no
 force_focus_wrapping yes
 
 ## THEME ###
-set $FOCUS #aa291e
+set $FOCUS #d46a6a
 set $UNFOCUS #49524a
 set $INACTIVE #999999
 set $FOCUS_TEXT #ffffff

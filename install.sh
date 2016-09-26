@@ -40,6 +40,9 @@ ln -s $SRC_DIR/zsh/zshrc ~/.zshrc
 rm ~/.ackrc
 ln -s $SRC_DIR/ack/ackrc ~/.ackrc
 
+rm ~/.ctags
+ln -s $SRC_DIR/ctags/ctags ~/.ctags
+
 rm ~/.fonts.conf
 ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
 

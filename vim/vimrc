@@ -219,6 +219,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'tmhedberg/matchit'
 " NeoBundle 'shawncplus/phpcomplete.vim'
+" NeoBundle 'm2mdas/phpcomplete-extended'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
@@ -229,6 +230,20 @@ NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'mtth/scratch.vim'
 NeoBundle 'lrvick/Conque-Shell'
+
+NeoBundle 'leafgarland/typescript-vim'
+
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+
+NeoBundle 'Quramy/tsuquyomi'
 " -----------------------------------------
 
 " JShint :)
@@ -461,7 +476,7 @@ let g:solarized_termtrans=1
 " vim-airline
 
 " Colorscheme for airline
-let g:airline_theme='badwolf'
+let g:airline_theme='molokai'
 
 " Set custom left separator
 let g:airline_left_sep = '▶'
@@ -532,7 +547,7 @@ inoremap <expr><C-e> neocomplcache#undo_completion()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " For cursor moving in insert mode
 inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
@@ -871,9 +886,11 @@ endif
 nnoremap <silent> <F12> :w<CR>
 nnoremap <F3> :echo @%<CR>
 
+nnoremap <silent><leader>. :CtrlPCurFile<CR>
 nnoremap <silent><leader>b :CtrlPBuffer<CR>
 nnoremap <silent><leader>m :CtrlPMRU<CR>
-nnoremap <silent><leader>t :CtrlPTag<CR>
+" nnoremap <silent><leader>t :CtrlPTag<CR>
+nnoremap <silent><leader>t :CtrlPBufTag<CR>
 
 nnoremap <silent><leader>y :TagbarToggle<CR>
 
@@ -896,10 +913,13 @@ nnoremap <leader>2 :!ctags **/*<CR>
 
 " Clear search
 nnoremap <leader>l :nohlsearch<CR>
+
+nnoremap <leader>e :Explore<CR>
+nnoremap <leader>d :Texplore<CR>
 " -----------------------------------------
 
 " ------------ My config -----------------
-" let g:SuperTabDefaultCompletionType    = '<c-n>'
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 " let g:SuperTabCrMapping                = 0
 set linespace=1
 
@@ -911,21 +931,35 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_cmd='CtrlP :pwd'
 let g:ctrlp_working_path_mode = 0
 
+let g:ctrlp_buftag_types = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
+
 set splitright
 set splitbelow
 
 if has('gui_running')
-    set guifont=Inconsolata\ 12
+    set guifont=Inconsolata\ 10
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
 
     " colorscheme base16-atelierdune
-    set background=dark
+    set background=light
     colorscheme gruvbox
 else
-    set background=dark
+    set background=light
     colorscheme gruvbox
 endif
 " -----------------------------------------
