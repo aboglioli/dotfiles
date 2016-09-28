@@ -959,7 +959,7 @@ if has('gui_running')
     set background=dark
     colorscheme gruvbox
 else
-    set background=light
+    set background=dark
     colorscheme gruvbox
 endif
 " -----------------------------------------

@@ -78,7 +78,9 @@ alias vimrc="gvim ~/.vimrc"
 alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias tl="tree -L 2"
 
-export PATH="/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
+
+export PATH="$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
 
 
 # Preferred editor for local and remote sessions

@@ -1,6 +1,9 @@
 set $mod Mod4
 
-font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-iso10646-1
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:DejaVu Sans Mono 10
+font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
+font pango:Terminus 11px
 
 floating_modifier $mod
 
@@ -75,6 +78,7 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+F2 workspace &
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -87,6 +91,7 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+F2 move container to workspace &
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
