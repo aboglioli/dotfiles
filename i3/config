@@ -1,9 +1,6 @@
 set $mod Mod4
 
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:DejaVu Sans Mono 10
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-font pango:Terminus 11px
+font xft:Inconsolata Medium 10
 
 floating_modifier $mod
 
@@ -159,7 +156,7 @@ bar {
     status_command i3status
     mode dock
     position bottom
-    font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*
+    font xft:Inconsolata Medium 9
     workspace_buttons yes
     colors {
         background #1b4356
