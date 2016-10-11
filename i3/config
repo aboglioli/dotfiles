@@ -1,9 +1,6 @@
 set $mod Mod4
 
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:DejaVu Sans Mono 10
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-font pango:Terminus 11px
+font xft:Inconsolata Medium 10
 
 floating_modifier $mod
 
@@ -148,43 +145,42 @@ bindsym XF86TouchpadToggle exec ~/Script/toggletouchpad.sh # toggle touchpad
 # Take screenshot
 bindsym Print exec scrot ~/Imagenes/Screenshot/%Y-%m-%d_%s_$wx$h.png
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if avai
+# THEME
+set $FOCUS #094074
+set $UNFOCUS #6c809a
+set $INACTIVE #ee6c4d
+set $FOCUS_TEXT #ffffff
+set $UNFOCUS_TEXT #000000
+
 bar {
     status_command i3status
     mode dock
     position bottom
-    font -*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*
+    font xft:Inconsolata Medium 9
     workspace_buttons yes
     colors {
-        background #550000
+        background #1b4356
         statusline #999999
-        focused_workspace #d46a6a #d46a6a #ffffff
+        focused_workspace #999999 #094074 #ffffff
         active_workspace #ff5733 #ff5733 #f5f5f5
-        inactive_workspace #801515 #801515 #999999
+        inactive_workspace #1b4356 #1b4356 #000000
         urgent_workspace #2e3436 #9a878f
     }
 }
 
+#Layout
+client.focused            $FOCUS      $FOCUS      $FOCUS_TEXT     $FOCUS
+client.focused_inactive   $INACTIVE   $INACTIVE   $FOCUS_TEXT     $INACTIVE
+client.unfocused          $UNFOCUS    $UNFOCUS    $UNFOCUS_TEXT   $UNFOCUS
+client.urgent             $FOCUS      $FOCUS      $FOCUS_TEXT     $FOCUS
+client.background         $UNFOCUS
+
+
 # MY THINGS
-new_window pixel 2
-new_float pixel 2
+new_window pixel 3
+new_float pixel 3
 focus_follows_mouse no
 force_focus_wrapping yes
-
-## THEME ###
-set $FOCUS #d46a6a
-set $UNFOCUS #49524a
-set $INACTIVE #999999
-set $FOCUS_TEXT #ffffff
-set $UNFOCUS_TEXT #aaaaaa
-
-# Layout colors 	    bord 	bg 		text    indicator (split)
-client.focused 			$FOCUS $FOCUS $FOCUS_TEXT $FOCUS
-client.focused_inactive $INACTIVE $INACTIVE $FOCUS_TEXT $INACTIVE
-client.unfocused 		$UNFOCUS $UNFOCUS $UNFOCUS_TEXT $UNFOCUS
-client.urgent 			$FOCUS $FOCUS $FOCUS_TEXT $FOCUS
-client.background 		$UNFOCUS
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
