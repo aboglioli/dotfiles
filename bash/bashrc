@@ -1,7 +1,6 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-
 _PROMPT() {
     _EXIT_STATUS=$?
     [ $_EXIT_STATUS != 0 ] && _EXIT_STATUS_STR=" \[\033[38;5;7m\][\[$(tput sgr0)\]\[\033[38;5;9m\]$_EXIT_STATUS\[$(tput sgr0)\]\[\033[38;5;7m\]]\[$(tput sgr0)\]"

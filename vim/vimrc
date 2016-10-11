@@ -957,7 +957,7 @@ if has('gui_running')
 
     " colorscheme base16-atelierdune
     set background=dark
-    colorscheme gruvbox
+    colorscheme molokai
 else
     set background=dark
     colorscheme gruvbox
