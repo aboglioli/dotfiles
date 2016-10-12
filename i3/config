@@ -163,7 +163,7 @@ bar {
     workspace_buttons yes
     colors {
         background #1b4356
-        statusline #999999
+        statusline #ffffff
         focused_workspace #999999 #094074 #ffffff
         active_workspace #ff5733 #ff5733 #f5f5f5
         inactive_workspace #1b4356 #1b4356 #000000
