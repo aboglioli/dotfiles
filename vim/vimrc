@@ -230,9 +230,7 @@ NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'mtth/scratch.vim'
 NeoBundle 'lrvick/Conque-Shell'
-
 NeoBundle 'leafgarland/typescript-vim'
-
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
@@ -242,7 +240,6 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
-
 NeoBundle 'Quramy/tsuquyomi'
 " -----------------------------------------
 
@@ -919,6 +916,8 @@ nnoremap <leader>d :Texplore<CR>
 " -----------------------------------------
 
 " ------------ My config -----------------
+au BufRead,BufNewFile *.swig setfiletype jinja2
+
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 " let g:SuperTabCrMapping                = 0
 set linespace=1
