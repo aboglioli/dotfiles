@@ -30,8 +30,10 @@ URxvt.lineSpace:            0
 URxvt.allow_bold:           true
 ! URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true
 ! URxvt*boldFont: xft:Inconsolata:pixelsize=14:antialias=true
-URxvt*font: xft:Source Code Pro:pixelsize=13:antialias=true
-URxvt*boldFont: xft:Source Code Pro:pixelsize=13:antialias=true
+! URxvt*font: xft:Source Code Pro:pixelsize=13:antialias=true
+! URxvt*boldFont: xft:Source Code Pro:pixelsize=13:antialias=true
+URxvt*font: xft:Monospace:pixelsize=13:antialias=true
+URxvt*boldFont: xft:Monospace:pixelsize=13:antialias=true
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -47,7 +49,7 @@ URxvt.urlLauncher:          firefox
 
 ! Cursor
 URxvt.cursorBlink:          true
-URxvt.cursorColor:          #657b83
+! URxvt.cursorColor:          #657b83
 URxvt.cursorUnderline:      false
 
 ! Pointer
@@ -56,16 +58,9 @@ URxvt.pointerBlank:         true
 ! -----
 ! Color theme
 ! -----
-! -----------------------------------------------------------------------------
-! File: gruvbox-dark.xresources
-! Description: Retro groove colorscheme generalized
-! Author: morhetz <morhetz@gmail.com>
-! Source: https://github.com/morhetz/gruvbox-generalized
-! Last Modified: 6 Sep 2014
-! -----------------------------------------------------------------------------
-
-! hard contrast: *background: #1d2021
-*background: #282828
+! hard contrast: 
+*background: #1d2021
+! *background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
