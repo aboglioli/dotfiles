@@ -29,6 +29,9 @@ rm ~/.config/nvim/init.vim
 mkdir ~/.config/nvim
 ln -s $SRC_DIR/nvim/init.vim ~/.config/nvim/init.vim
 
+rm ~/.spacemacs
+ln -s $SRC_DIR/emacs/spacemacs ~/.spacemacs
+
 rm ~/.xinitrc
 ln -s $SRC_DIR/xinitrc ~/.xinitrc
 rm ~/.startup_apps
