@@ -15,7 +15,7 @@ Xft.hintstyle:              hintslight
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
 
-URxvt.depth:                32
+urxvt*depth: 32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
 URxvt.fading:               0
@@ -59,7 +59,8 @@ URxvt.pointerBlank:         true
 ! Color theme
 ! -----
 ! hard contrast: 
-*background: #1d2021
+! *background: #1d2021
+urxvt*background: rgba:0000/0000/0200/c800
 ! *background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
