@@ -32,8 +32,8 @@ URxvt.allow_bold:           true
 ! URxvt*boldFont: xft:Inconsolata:pixelsize=14:antialias=true
 ! URxvt*font: xft:Source Code Pro:pixelsize=13:antialias=true
 ! URxvt*boldFont: xft:Source Code Pro:pixelsize=13:antialias=true
-URxvt*font: xft:Monospace:pixelsize=13:antialias=true
-URxvt*boldFont: xft:Monospace:pixelsize=13:antialias=true
+URxvt*font: xft:Source Code Pro:pixelsize=13:antialias=true
+URxvt*boldFont: xft:Source Code Pro:pixelsize=13:antialias=true
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -60,7 +60,8 @@ URxvt.pointerBlank:         true
 ! -----
 ! hard contrast: 
 ! *background: #1d2021
-urxvt*background: rgba:0000/0000/0200/c800
+
+urxvt*background: rgba:1000/1000/1000/d000
 ! *background: #282828
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
