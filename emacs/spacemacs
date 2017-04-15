@@ -299,6 +299,8 @@ values."
 
 ;; Custom indent
 (defun my-setup-indent (n)
+  ;; global
+  (setq create-lockfiles nil)
   ;; java/c/c++
   (setq c-basic-offset n)
   ;; web development
