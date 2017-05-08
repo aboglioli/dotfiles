@@ -8,7 +8,7 @@ export BROWSER=google-chrome
 export AWT_TOOLKIT=MToolkit
 
 # xcompmgr -n &
-# compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b &
+compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b &
 # cairo-compmgr &
 wmname LG3D &
 feh --bg-scale ~/.background.jpg

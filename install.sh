@@ -71,6 +71,9 @@ ln -s $SRC_DIR/terminator/config ~/.config/terminator/config
 rm -rf ~/.config/ranger
 ln -s $SRC_DIR/ranger ~/.config/ranger
 
+rm ~/.config/compton.conf
+ln -s $SRC_DIR/compton/compton.conf ~/.config/compton.conf
+
 sudo rm /etc/pacman.conf
 sudo ln -s $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
 
