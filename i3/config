@@ -157,7 +157,7 @@ set $UNFOCUS_TEXT #aaaaaa
 
 bar {
     status_command i3status
-    mode dock
+    mode hide
     position bottom
     workspace_buttons yes
     colors {

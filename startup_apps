@@ -15,7 +15,7 @@ feh --bg-scale ~/.background.jpg
 xrdb -merge ~/.Xresources
 numlockx
 
-# redshift -l -32.883331:-68.699997 &
+redshift -l -32.883331:-68.699997 &
 dunst -conf ~/.dunstrc &
 pulseaudio -D &
 nm-applet &
