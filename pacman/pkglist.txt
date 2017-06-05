@@ -3,7 +3,6 @@ alsa-firmware
 alsa-oss
 alsa-plugins
 alsa-utils
-apache-tools
 aria2
 autoconf
 automake
@@ -65,12 +64,6 @@ inetutils
 jdk7-openjdk
 jdk8-openjdk
 jpegoptim
-lib32-alsa-plugins
-lib32-libstdc++5
-lib32-openal
-lib32-sdl2
-lib32-sdl_image
-lib32-sdl_ttf
 lshw
 lxappearance
 lynx
@@ -115,7 +108,6 @@ screen
 scrot
 sed
 sshfs
-steam
 sudo
 synapse
 synergy
@@ -135,7 +127,6 @@ wget
 wmname
 wxcam
 x11vnc
-xautoclick
 xclip
 xcompmgr
 xdg-user-dirs-gtk
