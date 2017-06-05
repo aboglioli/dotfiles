@@ -24,6 +24,7 @@ ctags
 dconf-editor
 dialog
 diffutils
+dunst
 dmenu
 dmidecode
 dnsmasq

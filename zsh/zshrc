@@ -69,7 +69,6 @@ export AWT_TOOLKIT=MToolkit
 
 # Aliases
 alias dev="cd ~/Desarrollo"
-alias lab="cd ~/Lab"
 alias temp="cd ~/Temporal"
 alias utn="cd ~/Documentos/UTN"
 

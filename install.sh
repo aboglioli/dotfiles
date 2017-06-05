@@ -9,10 +9,10 @@ rm ~/.conkyrc
 ln -s $SRC_DIR/conky/conkyrc ~/.conkyrc
 
 rm ~/.dunstrc
-ln -s $SRC_DIR/dunst/dunstrc ~/.dunstrc
+ln -s $SRC_DIR/dunst/dunstrc ~/.dunst
 
-rm ~/.i3/config
-ln -s $SRC_DIR/i3/config ~/.i3/config
+rm ~/.i3
+ln -s $SRC_DIR/i3 ~/.i3
 rm ~/.i3status.conf
 ln -s $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 
@@ -24,10 +24,6 @@ ln -s $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
 
 rm ~/.vimrc
 ln -s $SRC_DIR/vim/vimrc ~/.vimrc
-
-rm ~/.config/nvim/init.vim
-mkdir ~/.config/nvim
-ln -s $SRC_DIR/nvim/init.vim ~/.config/nvim/init.vim
 
 rm ~/.spacemacs
 ln -s $SRC_DIR/emacs/spacemacs ~/.spacemacs
@@ -62,15 +58,6 @@ ln -s $SRC_DIR/background.jpg ~/.background.jpg
 rm ~/.notification.ogg
 ln -s $SRC_DIR/notification.ogg ~/.notification.ogg
 
-rm ~/.config/synapse/config.json
-ln -s $SRC_DIR/synapse/config.json ~/.config/synapse/config.json
-
-rm ~/.config/terminator/config
-ln -s $SRC_DIR/terminator/config ~/.config/terminator/config
-
-rm -rf ~/.config/ranger
-ln -s $SRC_DIR/ranger ~/.config/ranger
-
 rm ~/.config/compton.conf
 ln -s $SRC_DIR/compton/compton.conf ~/.config/compton.conf
 
@@ -87,4 +74,5 @@ cp -r $SRC_DIR/fonts/* ~/.fonts/
 fc-cache -vf
 
 # Copy necessary files
+mkdir -p ~/.oh-my-zsh/custom
 cp $SRC_DIR/zsh/themes/* ~/.oh-my-zsh/custom
