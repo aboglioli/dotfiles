@@ -94,8 +94,6 @@ python2-chardet
 python2-pip
 qalculate-gtk
 qemu
-qt
-qt4
 ranger
 rdesktop
 redshift
