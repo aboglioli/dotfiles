@@ -55,7 +55,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="~/dotfiles/scripts:~/Dropbox/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
+
+export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
 export TERM=screen-256color
 export EDITOR=vim
@@ -68,9 +70,9 @@ export AWT_TOOLKIT=MToolkit
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Aliases
-alias dev="cd ~/Desarrollo"
-alias temp="cd ~/Temporal"
-alias utn="cd ~/Documentos/UTN"
+alias dev="cd ~/dev"
+alias temp="cd ~/temp"
+alias utn="cd ~/docs/UTN"
 
 alias vimrc="gvim ~/.vimrc"
 
@@ -79,7 +81,6 @@ alias tl="tree -L 2"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 
-export PATH="$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$PATH"
 
 
 # Preferred editor for local and remote sessions
