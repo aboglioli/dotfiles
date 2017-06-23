@@ -321,6 +321,7 @@ you should place your code here."
   (setq create-lockfiles nil)
   (editorconfig-mode 1)
   (set-default 'truncate-lines t)
+  (spacemacs/toggle-indent-guide-globally-on)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
