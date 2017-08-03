@@ -184,6 +184,9 @@ new_window pixel 3
 new_float pixel 3
 focus_follows_mouse no
 force_focus_wrapping yes
+hide_edge_borders both
+
+floating_minimum_size 1366 x 768
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
