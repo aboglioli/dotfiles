@@ -135,7 +135,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(sanityinc-solarized-dark
+                         spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -322,6 +323,7 @@ you should place your code here."
   (editorconfig-mode 1)
   (set-default 'truncate-lines t)
   (spacemacs/toggle-indent-guide-globally-on)
+  (golden-ratio-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
