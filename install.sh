@@ -27,7 +27,7 @@ ln -sf $SRC_DIR/compton/compton.conf ~/.config/compton.conf
 ln -sf $SRC_DIR/gtk/gtkrc-2.0 ~/.gtkrc-2.0
 ln -sf $SRC_DIR/gtk/gtk3-settings.ini ~/.config/gtk-3.0/settings.ini
 
-sudo ln -s $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
+sudo ln -sf $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
 
 # Install fonts
 cp -r $SRC_DIR/fonts/* ~/.fonts/
