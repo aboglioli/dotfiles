@@ -2,77 +2,37 @@
 SRC_DIR=$PWD
 
 # Remove old files and link new files
-rm ~/.bashrc
-ln -s $SRC_DIR/bash/bashrc ~/.bashrc
-
-rm ~/.conkyrc
-ln -s $SRC_DIR/conky/conkyrc ~/.conkyrc
-
-rm ~/.dunstrc
-ln -s $SRC_DIR/dunst/dunstrc ~/.dunst
-
-rm ~/.i3
-ln -s $SRC_DIR/i3 ~/.i3
-rm ~/.i3status.conf
-ln -s $SRC_DIR/i3/i3status.conf ~/.i3status.conf
-
-rm ~/.rtorrent.rc
-ln -s $SRC_DIR/rtorrent/rtorrent.rc ~/.rtorrent.rc
-
-rm ~/.tmux.conf
-ln -s $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
-
-rm ~/.vimrc
-ln -s $SRC_DIR/vim/vimrc ~/.vimrc
-
-rm ~/.spacemacs
-ln -s $SRC_DIR/emacs/spacemacs ~/.spacemacs
-
-rm ~/.xinitrc
-ln -s $SRC_DIR/xinitrc ~/.xinitrc
-rm ~/.startup_apps
-ln -s $SRC_DIR/startup_apps ~/.startup_apps
-
-rm ~/.zshrc
-ln -s $SRC_DIR/zsh/zshrc ~/.zshrc
-
-rm ~/.ackrc
-ln -s $SRC_DIR/ack/ackrc ~/.ackrc
-
-rm ~/.ctags
-ln -s $SRC_DIR/ctags/ctags ~/.ctags
-
-rm ~/.fonts.conf
-ln -s $SRC_DIR/fonts.conf ~/.fonts.conf
-
-rm ~/.Xresources
-ln -s $SRC_DIR/Xresources ~/.Xresources
+ln -sf $SRC_DIR/bash/bashrc ~/.bashrc
+ln -sf $SRC_DIR/conky/conkyrc ~/.conkyrc
+ln -sf $SRC_DIR/dunst/dunstrc ~/.dunst
+ln -sf $SRC_DIR/i3 ~/.i3
+ln -sf $SRC_DIR/i3/i3status.conf ~/.i3status.conf
+ln -sf $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
+ln -sf $SRC_DIR/vim/vimrc ~/.vimrc
+ln -sf $SRC_DIR/emacs/spacemacs ~/.spacemacs
+ln -sf $SRC_DIR/xinitrc ~/.xinitrc
+ln -sf $SRC_DIR/startup_apps ~/.startup_apps
+ln -sf $SRC_DIR/zsh/zshrc ~/.zshrc
+ln -sf $SRC_DIR/ack/ackrc ~/.ackrc
+ln -sf $SRC_DIR/ctags/ctags ~/.ctags
+ln -sf $SRC_DIR/fonts.conf ~/.fonts.conf
+ln -sf $SRC_DIR/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
 
-rm ~/.synergy.conf
-ln -s $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
+ln -sf $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
+ln -sf $SRC_DIR/background.jpg ~/.background.jpg
+ln -sf $SRC_DIR/notification.ogg ~/.notification.ogg
+ln -sf $SRC_DIR/compton/compton.conf ~/.config/compton.conf
 
-rm ~/.background.jpg
-ln -s $SRC_DIR/background.jpg ~/.background.jpg
+ln -sf $SRC_DIR/gtk/gtkrc-2.0 ~/.gtkrc-2.0
+ln -sf $SRC_DIR/gtk/gtk3-settings.ini ~/.config/gtk-3.0/settings.ini
 
-rm ~/.notification.ogg
-ln -s $SRC_DIR/notification.ogg ~/.notification.ogg
-
-rm ~/.config/compton.conf
-ln -s $SRC_DIR/compton/compton.conf ~/.config/compton.conf
-
-sudo rm /etc/pacman.conf
 sudo ln -s $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
-
-sudo rm /etc/ssh/ssh_config
-sudo ln -s $SRC_DIR/ssh/ssh_config /etc/ssh/ssh_config
-sudo rm /etc/ssh/sshd_config
-sudo ln -s $SRC_DIR/ssh/sshd_config /etc/ssh/sshd_config
 
 # Install fonts
 cp -r $SRC_DIR/fonts/* ~/.fonts/
 fc-cache -vf
 
-# Copy necessary files
+# ZSH themes
 mkdir -p ~/.oh-my-zsh/custom
 cp $SRC_DIR/zsh/themes/* ~/.oh-my-zsh/custom
