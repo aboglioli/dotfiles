@@ -334,6 +334,16 @@ you should place your code here."
   (set-default 'truncate-lines t)
   (spacemacs/toggle-indent-guide-globally-on)
   (golden-ratio-mode 1)
+
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
+  (defun my-web-mode-hook ()
+    (setq web-mode-markup-indent-offset 2)
+    (setq web-mode-css-indent-offset 2)
+    (setq web-mode-code-indent-offset 2)
+    (setq web-mode-indent-style 2)
+    )
+  (add-hook 'web-mode-hook  'my-web-mode-hook)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
