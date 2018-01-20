@@ -30,7 +30,8 @@ ln -sf $SRC_DIR/gtk/gtk3-settings.ini ~/.config/gtk-3.0/settings.ini
 sudo ln -sf $SRC_DIR/pacman/pacman.conf /etc/pacman.conf
 
 # Install fonts
-cp -r $SRC_DIR/fonts/* ~/.fonts/
+rm -rf ~/.fonts
+ln -sf $SRC_DIR/fonts ~/.fonts
 fc-cache -vf
 
 # ZSH themes

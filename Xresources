@@ -28,11 +28,11 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           true
-URxvt.font: xft:Ubuntu Mono:pixelsize=14:antialias=true:hinting=true,\
-            xft:Source Code Pro:pixelsize=14:style=medium:antialias=true,\
+URxvt.font: xft:Ubuntu Mono:pixelsize=13:antialias=true:hinting=true,\
+            xft:Source Code Pro:pixelsize=13:style=medium:antialias=true,\
             -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:Ubuntu Mono:pixelsize=14:antialias=true:hinting=true,\
-            xft:Source Code Pro:pixelsize=14:style=medium:antialias=true,\
+URxvt.boldFont: xft:Ubuntu Mono:pixelsize=13:antialias=true:hinting=true,\
+            xft:Source Code Pro:pixelsize=13:style=medium:antialias=true,\
             -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 ! Fix font space
@@ -61,8 +61,8 @@ URxvt.pointerBlank:         true
 ! hard contrast: 
 ! *background: #1d2021
 
-urxvt*background: rgba:1000/1000/1000/d000
-! *background: #282828
+!urxvt*background: rgba:1000/1000/1000/d000
+*background: #181818
 ! soft contrast: *background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
