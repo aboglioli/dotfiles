@@ -3,6 +3,7 @@ SRC_DIR=$PWD
 
 # Remove old files and link new files
 ln -sf $SRC_DIR/bash/bashrc ~/.bashrc
+ln -sf $SRC_DIR/git/gitconfig ~/.gitconfig
 ln -sf $SRC_DIR/conky/conkyrc ~/.conkyrc
 ln -sf $SRC_DIR/dunst/dunstrc ~/.dunst
 ln -sf $SRC_DIR/i3 ~/.i3
