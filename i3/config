@@ -11,6 +11,16 @@ floating_modifier $mod
 bindsym $mod+Menu exec --no-startup-id urxvt -e bash -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
 bindsym $mod+Return exec --no-startup-id urxvt
 
+# change focus between monitors
+bindsym $mod+Control+Left focus output left
+bindsym $mod+Control+Right focus output right
+
+bindsym $mod+F1 focus output $monitor
+bindsym $mod+F2 focus output $monitor2
+
+bindsym $mod+Control+Shift+Left move output left
+bindsym $mod+Control+Shift+Right move output right
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
