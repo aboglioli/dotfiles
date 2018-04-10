@@ -348,8 +348,9 @@ you should place your code here."
 
   (setq js2-strict-missing-semi-warning nil)
   (setq js2-strict-trailing-comma-warning nil)
-  ;; (setq js2-mode-show-parse-errors nil)
-  ;; (setq js2-mode-show-strict-warnings nil)
+
+  ;; Solve react layer bug #8222
+  (setq-default company-minimum-prefix-length 2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
