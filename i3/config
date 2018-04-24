@@ -1,7 +1,7 @@
 set $mod Mod4
 set $mod2 Mod1
-set $monitor HDMI-1
-set $monitor2 DVI-D-1
+set $monitor HDMI-0
+set $monitor2 DVI-D-0
 
 font xft:Ubuntu 10
 
@@ -179,7 +179,7 @@ set $UNFOCUS_TEXT #aaaaaa
 
 bar {
     status_command i3status
-    mode hide
+    mode dock
     position bottom
     workspace_buttons yes
     colors {
