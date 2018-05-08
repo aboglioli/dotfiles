@@ -20,6 +20,9 @@ ln -sf $SRC_DIR/fonts.conf ~/.fonts.conf
 ln -sf $SRC_DIR/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
 
+mkdir ~/.config/terminator
+ln -sf $SRC_DIR/terminator/config ~/.config/terminator/config
+
 ln -sf $SRC_DIR/synergy/synergy.conf ~/.synergy.conf
 ln -sf $SRC_DIR/background.jpg ~/.background.jpg
 ln -sf $SRC_DIR/notification.ogg ~/.notification.ogg
