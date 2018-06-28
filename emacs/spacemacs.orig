@@ -153,7 +153,11 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
+<<<<<<< HEAD
+   dotspacemacs-default-font '("Source Code Pro"
+=======
    dotspacemacs-default-font '("SFMono-Regular"
+>>>>>>> a15fc7be11786858422ad49b29dae7bf5eb861b1
                                :size 11
                                :weight normal
                                :width normal
