@@ -78,6 +78,8 @@ alias vimrc="gvim ~/.vimrc"
 alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias tl="tree -L 2"
 
+alias dco="docker-compose"
+
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 
 
