@@ -28,10 +28,10 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           true
-URxvt.font: xft:Ubuntu Mono:pixelsize=11:antialias=true:hinting=true,\
+URxvt.font: xft:Ubuntu Mono:pixelsize=12:antialias=true:hinting=true,\
             xft:Source Code Pro:pixelsize=11:style=medium:antialias=true,\
             -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:Ubuntu Mono:pixelsize=11:antialias=true:hinting=true,\
+URxvt.boldFont: xft:Ubuntu Mono:pixelsize=12:antialias=true:hinting=true,\
             xft:Source Code Pro:pixelsize=11:style=medium:antialias=true,\
             -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 

@@ -9,7 +9,6 @@ export AWT_TOOLKIT=MToolkit
 
 # xcompmgr -n &
 compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b &
-# cairo-compmgr &
 wmname LG3D &
 feh --bg-scale ~/.background.jpg
 xrdb -merge ~/.Xresources
@@ -17,8 +16,7 @@ numlockx
 
 # redshift -l -32.883331:-68.699997 &
 dunst -conf ~/.dunstrc &
-pulseaudio -D &
 nm-applet &
 # conky &
 # unclutter -idle 1 -jitter 5 -noevents -root &
-# dropbox &
+pulseaudio --start
