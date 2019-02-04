@@ -155,8 +155,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("SFMono-Regular"
-                               :size 11
+   dotspacemacs-default-font '("SourceCode Pro"
+                               :size 13
                                :weight normal
                                :width normal
                                :powerline-scale 1.0)
@@ -337,6 +337,8 @@ you should place your code here."
   (set-default 'truncate-lines t)
   (spacemacs/toggle-indent-guide-globally-on)
   (golden-ratio-mode 1)
+
+  (go :variables go-tab-width 4)
 
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
