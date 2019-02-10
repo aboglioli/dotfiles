@@ -19,4 +19,4 @@ dunst -conf ~/.dunstrc &
 nm-applet &
 # conky &
 # unclutter -idle 1 -jitter 5 -noevents -root &
-pulseaudio --start
+# pulseaudio --start
