@@ -1,6 +1,7 @@
 set $mod Mod4
 set $mod2 Mod1
 set $monitor HDMI-0
+set $monitor1 HDMI-1
 set $monitor2 DVI-D-0
 
 font xft:Ubuntu 10
@@ -89,8 +90,8 @@ workspace 2 output $monitor
 workspace 3 output $monitor
 workspace 4 output $monitor
 
-workspace :1 output $monitor2
-workspace :2 output $monitor2
+workspace :1 output $monitor1
+workspace :2 output $monitor1
 workspace :3 output $monitor2
 workspace :4 output $monitor2
 

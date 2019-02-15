@@ -333,13 +333,14 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq create-lockfiles nil)
-  (editorconfig-mode 1)
   (set-default 'truncate-lines t)
   (spacemacs/toggle-indent-guide-globally-on)
   (golden-ratio-mode 1)
 
-  (go :variables go-tab-width 4)
+  ;; fix issue with indentation after ENTER
+  (clean-aindent-mode -1)
 
+  ;; web config
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
   (defun my-web-mode-hook ()
@@ -353,8 +354,10 @@ you should place your code here."
   (setq js2-strict-missing-semi-warning nil)
   (setq js2-strict-trailing-comma-warning nil)
 
-  ;; Solve react layer bug #8222
-  (setq-default company-minimum-prefix-length 2)
+  ;; ;; Solve react layer bug #8222
+  ;; (setq-default company-minimum-prefix-length 2)
+
+  (editorconfig-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
