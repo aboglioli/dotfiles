@@ -5,7 +5,7 @@ SRC_DIR=$PWD
 ln -sf $SRC_DIR/bash/bashrc ~/.bashrc
 ln -sf $SRC_DIR/git/gitconfig ~/.gitconfig
 ln -sf $SRC_DIR/conky/conkyrc ~/.conkyrc
-ln -sf $SRC_DIR/dunst/dunstrc ~/.dunst
+ln -sf $SRC_DIR/dunst/dunstrc ~/.dunstrc
 ln -sf $SRC_DIR/i3 ~/.i3
 ln -sf $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
