@@ -85,15 +85,10 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # workspaces
-workspace 1 output $monitor
+workspace 1 output $monitor1
 workspace 2 output $monitor
 workspace 3 output $monitor
-workspace 4 output $monitor
-
-workspace :1 output $monitor1
-workspace :2 output $monitor1
-workspace :3 output $monitor2
-workspace :4 output $monitor2
+workspace 4 output $monitor2
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -101,21 +96,11 @@ bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 
-bindsym $mod2+1 workspace :1
-bindsym $mod2+2 workspace :2
-bindsym $mod2+3 workspace :3
-bindsym $mod2+4 workspace :4
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
-
-bindsym $mod2+Shift+1 move container to workspace :1
-bindsym $mod2+Shift+2 move container to workspace :2
-bindsym $mod2+Shift+3 move container to workspace :3
-bindsym $mod2+Shift+4 move container to workspace :4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
