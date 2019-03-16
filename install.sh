@@ -9,7 +9,6 @@ ln -sf $SRC_DIR/dunst/dunstrc ~/.dunstrc
 ln -sf $SRC_DIR/i3 ~/.i3
 ln -sf $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
-ln -sf $SRC_DIR/emacs/spacemacs ~/.spacemacs
 ln -sf $SRC_DIR/xinitrc ~/.xinitrc
 ln -sf $SRC_DIR/startup_apps ~/.startup_apps
 ln -sf $SRC_DIR/zsh/zshrc ~/.zshrc
@@ -40,3 +39,12 @@ fc-cache -vf
 # ZSH themes
 mkdir -p ~/.oh-my-zsh/custom
 cp $SRC_DIR/zsh/themes/* ~/.oh-my-zsh/custom
+
+# VIM configuration
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+ln -sf $SRC_DIR/vim/vimrc ~/.vimrc
+
+# Spacemacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+ln -sf $SRC_DIR/emacs/spacemacs ~/.spacemacs
