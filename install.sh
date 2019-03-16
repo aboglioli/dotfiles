@@ -9,7 +9,6 @@ ln -sf $SRC_DIR/dunst/dunstrc ~/.dunstrc
 ln -sf $SRC_DIR/i3 ~/.i3
 ln -sf $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC_DIR/tmux/tmux.conf ~/.tmux.conf
-ln -sf $SRC_DIR/vim/vimrc ~/.vimrc
 ln -sf $SRC_DIR/emacs/spacemacs ~/.spacemacs
 ln -sf $SRC_DIR/xinitrc ~/.xinitrc
 ln -sf $SRC_DIR/startup_apps ~/.startup_apps
