@@ -19,7 +19,8 @@ fc-cache -vf
 ln -sf $SRC_DIR/git/gitconfig ~/.gitconfig
 ln -sf $SRC_DIR/gtk/gtkrc-2.0 ~/.gtkrc-2.0
 ln -sf $SRC_DIR/gtk/gtk3-settings.ini ~/.config/gtk-3.0/settings.ini
-ln -sf $SRC_DIR/i3 ~/.i3
+mkdir ~/.i3
+ln -sf $SRC_DIR/i3/config ~/.i3/config
 ln -sf $SRC_DIR/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC_DIR/notification.ogg ~/.notification.ogg
 
