@@ -18,8 +18,8 @@ bindsym $mod+Control+Left focus output left
 bindsym $mod+Control+Right focus output right
 bindsym $mod+Tab focus output right
 
-bindsym $mod+F1 focus output $monitor1
-bindsym $mod+F2 focus output $monitor
+bindsym $mod+F1 focus output $monitor
+bindsym $mod+F2 focus output $monitor1
 bindsym $mod+F3 focus output $monitor2
 
 bindsym $mod+Control+Shift+Left move output left
@@ -86,10 +86,10 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # workspaces
-workspace 1 output $monitor1
-workspace 2 output $monitor1
-workspace 3 output $monitor
-workspace 4 output $monitor
+workspace 1 output $monitor
+workspace 2 output $monitor
+workspace 3 output $monitor1
+workspace 4 output $monitor1
 workspace 5 output $monitor2
 
 # switch to workspace
