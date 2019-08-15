@@ -47,13 +47,8 @@ values."
      react
      go
      rust
-     (typescript :variables
-                 typescript-fmt-on-save t)
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+     typescript
+
      helm
      auto-completion
      ;; better-defaults
@@ -358,6 +353,8 @@ you should place your code here."
   (setq-default company-minimum-prefix-length 2)
 
   (editorconfig-mode 1)
+
+  (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
