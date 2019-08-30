@@ -53,7 +53,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export GOPATH="$HOME/dev/go"
+export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
 export YARNPATH="$HOME/.yarn"
 export PYENVPATH="$HOME/.pyenv"
