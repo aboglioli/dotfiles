@@ -56,7 +56,8 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
 export YARNPATH="$HOME/.yarn"
-export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH"
+export PYENVPATH="$HOME/.pyenv"
+export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH:$PYENVPATH/bin"
 
 
 export TERM=screen-256color
