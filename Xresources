@@ -61,9 +61,8 @@ URxvt.pointerBlank:         true
 ! hard contrast: 
 ! *background: #1d2021
 
-!urxvt*background: rgba:1000/1000/1000/d000
-*background: #252222
-! soft contrast: *background: #32302f
+urxvt*background: rgba:1000/1000/1000/e000
+!*background: #252222
 *foreground: #ebdbb2
 ! Black + DarkGrey
 *color0:  #282828
