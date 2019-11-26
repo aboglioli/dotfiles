@@ -1,6 +1,6 @@
 Xft.dpi:                        109
 URxvt*termName:                 rxvt-256color
-URxvt*font:                     xft:Menlo:pixelsize=13,xft:Roboto Mono:pixelsize=13
+URxvt*font:                     xft:Ubuntu Mono:pixelsize=14,xft:Roboto Mono:pixelsize=13,xft:Menlo:pixelsize=13
 URxvt.depth:                    0
 URxvt*lineSpace:                1
 URxvt.letterSpace:              -1
