@@ -177,11 +177,11 @@ bindsym XF86TouchpadToggle exec ~/Script/toggletouchpad.sh # toggle touchpad
 bindsym Print exec scrot ~/Imagenes/Screenshot/%Y-%m-%d_%s_$wx$h.png
 
 # THEME
-set $FOCUS #ee6c4d
-set $UNFOCUS #424242
+set $FOCUS #20639b
+set $UNFOCUS #222222
 set $INACTIVE #727272
-set $FOCUS_TEXT #000000
-set $UNFOCUS_TEXT #aaaaaa
+set $FOCUS_TEXT #ffffff
+set $UNFOCUS_TEXT #999999
 
 bar {
     status_command i3status
@@ -189,11 +189,11 @@ bar {
     position bottom
     workspace_buttons yes
     colors {
-        background #424242
+        background $UNFOCUS
         statusline #ffffff
-        focused_workspace #c75252 #c75252 #000000
-        active_workspace #424242 #424242 #ffffff
-        inactive_workspace #424242 #424242 #aaaaaa
+        focused_workspace $FOCUS $FOCUS #ffffff
+        active_workspace $UNFOCUS $UNFOCUS #ffffff
+        inactive_workspace $UNFOCUS $UNFOCUS #aaaaaa
         urgent_workspace #2e3436 #9a878f
     }
 }
