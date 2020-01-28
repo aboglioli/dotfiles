@@ -60,7 +60,7 @@ export PYENVPATH="$HOME/.pyenv"
 export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH:$PYENVPATH/bin"
 
 
-export TERM=screen-256color
+export TERM=rxvt-unicode-256color
 export EDITOR=vim
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR

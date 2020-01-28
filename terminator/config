@@ -2,6 +2,7 @@
   borderless = True
   enabled_plugins = ,
   tab_position = hidden
+  window_state = maximise
 [keybindings]
   go_down = <Shift>Down
   go_next = <Shift><Control>o
@@ -51,15 +52,16 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#181818"
+    background_color = "#282828"
     background_darkness = 0.77
-    background_type = transparent
     cursor_color = "#e2e2e2"
-    font = Monospace 8
-    foreground_color = "#eeeeec"
+    font = SF Mono Extra-Condensed 9
+    foreground_color = "#ebdbb2"
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     scrollback_infinite = True
     scrollback_lines = 1000
     scrollbar_position = hidden
+    show_titlebar = False
     use_system_font = False
   [[root]]
     background_color = "#070505"
