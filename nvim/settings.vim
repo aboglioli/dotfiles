@@ -23,7 +23,6 @@ set signcolumn=yes
 set colorcolumn=120
 set ignorecase
 set smartcase
-set termguicolors
 set autoread
 set scrolloff=2
 set sidescrolloff=5
