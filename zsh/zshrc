@@ -67,6 +67,10 @@ export GIT_EDITOR=$EDITOR
 export PAGER=less
 export BROWSER=google-chrome-stable
 export AWT_TOOLKIT=MToolkit
+export FZF_DEFAULT_OPTS='
+--color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
+--color info:108,prompt:109,spinner:108,pointer:168,marker:168
+'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -100,3 +104,5 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 
 export NVM_DIR="/home/kiriost/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
