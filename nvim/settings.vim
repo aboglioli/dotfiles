@@ -11,7 +11,7 @@ set cursorline
 set laststatus=2
 set noshowmode
 set autoindent
-set autochdir
+" set autochdir
 set autoread
 set nobackup
 set nowritebackup
