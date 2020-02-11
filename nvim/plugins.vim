@@ -11,7 +11,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'roman/golden-ratio'
 
 "" Themes
 Plug 'morhetz/gruvbox'
@@ -28,7 +27,7 @@ call plug#end()
 
 " Configuration
 "" lightline
-let g:lightline = { 'colorscheme': 'wombat' }
+let g:lightline = { 'colorscheme': 'one' }
 
 "" fzf
 function! s:update_fzf_colors()

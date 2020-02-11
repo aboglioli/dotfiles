@@ -22,4 +22,4 @@ nnoremap <silent> <leader><tab> :b#<CR>
 
 nnoremap <silent> <leader>gd <Plug>(coc-definition)
 nnoremap <silent> <leader>gr <Plug>(coc-references)
-nnoremap <silent> <leader>gj <Plug>(coc-implementation)
+nnoremap <silent> <leader>gi <Plug>(coc-implementation)
