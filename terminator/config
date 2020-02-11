@@ -56,7 +56,7 @@
     background_darkness = 0.9
     background_type = transparent
     cursor_color = "#e2e2e2"
-    font = SF Mono Extra-Condensed 9
+    font = SF Mono Extra-Condensed 10
     foreground_color = "#ebdbb2"
     palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     scrollback_infinite = True
