@@ -2,21 +2,23 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'morhetz/gruvbox'
-Plug 'sickill/vim-monokai'
-Plug 'iCyMind/NeoSolarized'
-Plug 'joshdick/onedark.vim'
-Plug 'mhartington/oceanic-next'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
-" Plug 'roman/golden-ratio'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
+" Plug 'roman/golden-ratio'
+
+"" Themes
+Plug 'morhetz/gruvbox'
+Plug 'sickill/vim-monokai'
+Plug 'iCyMind/NeoSolarized'
+Plug 'joshdick/onedark.vim'
+Plug 'mhartington/oceanic-next'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

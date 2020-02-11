@@ -26,3 +26,5 @@ set smartcase
 set autoread
 set scrolloff=2
 set sidescrolloff=5
+set list
+set listchars=eol:$,tab:▸-,extends:>,precedes:<,nbsp:_,trail:~,space:·

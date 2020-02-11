@@ -10,14 +10,15 @@ nnoremap <silent> <leader>wS :split<CR><C-W>w
 nnoremap <silent> <leader>wV :vsplit<CR><C-W>w
 nnoremap <silent> <leader>wd <C-W>q
 nnoremap <silent> <leader>w <C-W>
-nnoremap <silent> <leader><tab> <C-W>w
 
-" nnoremap <silent> <C-P> :GFiles<CR>
 nnoremap <silent> <C-P> :Files<CR>
+nnoremap <silent> <leader>e :Files <C-R>=expand('%:h')<CR><CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>s :Rg<CR>
 nnoremap <silent> <leader>l :BLines<CR>
-nnoremap <silent> <leader>e :Explore<CR>
+" nnoremap <silent> <leader>e :Explore<CR>
+
+nnoremap <silent> <leader><tab> :b#<CR>
 
 nnoremap <silent> <leader>gd <Plug>(coc-definition)
 nnoremap <silent> <leader>gr <Plug>(coc-references)
