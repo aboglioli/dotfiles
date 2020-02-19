@@ -1,9 +1,8 @@
 [global_config]
-  borderless = True
   enabled_plugins = ,
+  hide_from_taskbar = True
   inactive_color_offset = 0.708333333333
   tab_position = hidden
-  window_state = maximise
 [keybindings]
   go_down = <Shift>Down
   go_next = <Shift><Control>o
