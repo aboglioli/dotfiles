@@ -23,6 +23,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Configuration

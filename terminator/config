@@ -5,7 +5,9 @@
   tab_position = hidden
 [keybindings]
   go_down = <Shift>Down
+  go_left = <Shift><Alt>Left
   go_next = <Shift><Control>o
+  go_right = <Shift><Alt>Right
   go_up = <Shift>Up
   move_tab_left = <Shift><Alt>Left
   move_tab_right = <Shift><Alt>Right
