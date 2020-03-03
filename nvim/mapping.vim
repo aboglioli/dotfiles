@@ -12,6 +12,7 @@ nnoremap <silent> <leader>wd <C-W>q
 nnoremap <silent> <leader>w <C-W>
 
 nnoremap <silent> <C-P> :Files<CR>
+nnoremap <silent> <leader>p :GFiles<CR>
 nnoremap <silent> <leader>e :Files <C-R>=expand('%:h')<CR><CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>s :Rg<CR>
