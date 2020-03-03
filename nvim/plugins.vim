@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
+Plug 'camspiers/lens.vim'
 
 "" Themes
 Plug 'morhetz/gruvbox'
