@@ -127,6 +127,8 @@ bar {
     mode hide
     position bottom
     workspace_buttons yes
+    tray_output primary
+    tray_padding 0
     colors {
         background $UNFOCUS
         statusline #ffffff
