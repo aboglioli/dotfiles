@@ -153,6 +153,9 @@ new_float pixel 2
 focus_follows_mouse yes
 force_focus_wrapping yes
 
+smart_borders on
+hide_edge_borders smart_no_gaps
+
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
