@@ -6,6 +6,7 @@ ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/bashrc ~/.bashrc
 ln -sf $SRC/compton.conf ~/.config/compton.conf
 ln -sf $SRC/dunstrc ~/.dunstrc
+ln -sf $SRC/alacritty.yml ~/.alacritty.yml
 
 # Fonts
 rm -rf ~/.fonts
