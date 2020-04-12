@@ -8,6 +8,10 @@ ln -sf $SRC/compton.conf ~/.config/compton.conf
 ln -sf $SRC/dunstrc ~/.dunstrc
 ln -sf $SRC/alacritty.yml ~/.alacritty.yml
 
+ln -sf $SRC/sxhkd ~/.config/sxhkd
+ln -sf $SRC/bspwm ~/.config/bspwm
+ln -sf $SRC/polybar ~/.config/polybar
+
 # Fonts
 rm -rf ~/.fonts
 ln -sf $SRC/fonts.conf ~/.fonts.conf

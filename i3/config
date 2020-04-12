@@ -8,11 +8,6 @@ font xft:Ubuntu 10
 
 floating_modifier $mod
 
-# start a terminal
-# bindsym $mod+Menu exec --no-startup-id urxvt -e bash -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
-# bindsym $mod+Menu exec --no-startup-id terminator -e "tmux -2 -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
-bindsym $mod+Return exec --no-startup-id alacritty -e "tmux"
-
 # change focus between monitors
 bindsym $mod+Control+Left focus output left
 bindsym $mod+Control+Right focus output right
@@ -23,10 +18,6 @@ bindsym $mod+Control+Shift+Right move output right
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start rofi
-bindsym $mod+d exec rofi -show run
-bindsym $mod+c exec rofi -show window
 
 # focus windows, and move focused window
 bindsym $mod+Left focus left
@@ -105,16 +96,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Mutimedia
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-
-# Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
 # THEME
 set $FOCUS #20639b
 set $UNFOCUS #222222
@@ -169,5 +150,3 @@ bindsym $mod+comma sticky toggle
 
 bindsym $mod+x move workspace to output right
 bindsym $mod+Shift+x move container to output right
-
-exec ~/.startup_apps
