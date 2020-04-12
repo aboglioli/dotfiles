@@ -2,7 +2,7 @@
 # Launcher
 #
 super + Return
-  alacritty -e "tmux"
+  st -e "tmux"
 
 super + d
   rofi -show run
