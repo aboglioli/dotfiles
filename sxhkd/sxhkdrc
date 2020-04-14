@@ -51,8 +51,11 @@ super + {Left,Down,Up,Right}
 super + {a,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-super + Tab
-	bspc node -f last
+super + {_,shift + }Tab
+	bspc node -f {next,prev}.local
+
+super + BackSpace
+  bspc node -f last
 
 super + {F1, F2}
 	bspc monitor -f {prev,next}
