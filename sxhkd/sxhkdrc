@@ -20,16 +20,16 @@ Print
 # External
 #
 XF86AudioRaiseVolume
-  pactl set-sink-volume 0 +5%
+  ponymix increase 3
 
 XF86AudioLowerVolume
-  pactl set-sink-volume 0 -5%
+  ponymix decrease 3
 
 XF86AudioMute
-  pactl set-sink-mute 0 toggle
+  ponymix toggle
 
 super + XF86AudioMute
-  pactl set-source-mute 1 toggle
+  ponymix --input toggle
 
 #
 # bspwm + sxhkd
