@@ -28,6 +28,9 @@ XF86AudioLowerVolume
 XF86AudioMute
   pactl set-sink-mute 0 toggle
 
+super + XF86AudioMute
+  pactl set-source-mute 1 toggle
+
 #
 # bspwm + sxhkd
 #
