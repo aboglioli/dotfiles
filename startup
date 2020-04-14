@@ -1,6 +1,5 @@
 setxkbmap es &
 
-xcompmgr &
 wmname LG3D &
 feh --bg-scale ~/.background.jpg
 dunst -conf ~/.dunstrc &
