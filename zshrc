@@ -6,7 +6,21 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# VIM mode
+bindkey -v
+export KEYTIMEOUT=1
+
+PS1+='${VIMODE}'
+function zle-line-init zle-keymap-select {
+    DOLLAR='%B%F{green}$%f%b '
+    GIANT_I='%B%F{red}@%f%b '
+    VIMODE="${${KEYMAP/vicmd/$GIANT_I}/(main|viins)/$DOLLAR}"
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+# Environment variables
 export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
 export YARNPATH="$HOME/.yarn"
@@ -20,10 +34,6 @@ export GIT_EDITOR=$EDITOR
 export PAGER=less
 export BROWSER=google-chrome-stable
 export AWT_TOOLKIT=MToolkit
-# export FZF_DEFAULT_OPTS='
-# --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
-# --color info:108,prompt:109,spinner:108,pointer:168,marker:168
-# '
 
 # Aliases
 alias v="nvim"
