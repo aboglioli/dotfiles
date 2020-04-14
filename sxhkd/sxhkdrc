@@ -122,9 +122,17 @@ super + shift + r : {Down,Up}
 super + {_,shift + }c
   bspc node --circulate {forward,backward}
 
+super + {_,shift + }e
+  bspc node {--equalize,--balance}
+
 # state
 super + {x,z}
 	bspc node -g {marked, sticky}
 
-super + {_,shift + }minus
-  bspc node {--equalize,--balance}
+super + shift + minus
+  bspc node -g hidden=on
+
+super + minus
+  NODES=$(bspc query -N -n .hidden | tail -n1); \
+  bspc node $NODES -g hidden=off; \
+  bspc node -f $NODES;
