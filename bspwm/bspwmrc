@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 bspc config border_width 2
 bspc config window_gap 0
@@ -17,3 +17,5 @@ if [[ $(hostname) == 'gdesktop' ]]; then
 else
  bspc monitor -d I II III IV V VI VII VIII IX X
 fi
+
+bspc rule -a scratchpad sticky=on state=floating

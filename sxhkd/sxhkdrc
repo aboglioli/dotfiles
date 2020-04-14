@@ -4,6 +4,9 @@
 super + Return
   st -e "tmux"
 
+super + shift + Return
+  st -c scratchpad -e "tmux"
+
 super + d
   rofi -show run
 
