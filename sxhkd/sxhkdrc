@@ -76,7 +76,11 @@ super + ctrl + {x,y,z}
 	bspc node -g {locked,sticky,private}
 
 super + ctrl + m
-  bspc node -g marked=on
+  bspc node -g marked;
+
+super + {_,shift + }y
+  bspc node -{s,n} newest.marked; \
+  bspc node newest.marked -g marked=off
 
 super + shift + minus
   bspc node --balance
