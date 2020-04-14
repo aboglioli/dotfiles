@@ -139,4 +139,5 @@ super + shift + minus
   bspc node -g hidden=on
 
 super + minus
-  bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off -f
+  NODES=$(bspc query -N -n .hidden | tail -n1); \
+  bspc node $NODES -d focused -g hidden=off -f
