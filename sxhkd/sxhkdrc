@@ -51,8 +51,8 @@ super + {Left,Down,Up,Right}
 super + {a,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-super + {_,shift + }Tab
-	bspc node -f {next,prev}.local
+super + Tab
+	bspc node -f last
 
 super + {F1, F2}
 	bspc monitor -f {prev,next}
@@ -65,11 +65,14 @@ super + {o,i}
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
+super + space
+  bspc node -f next.floating.local
+
 # layout
 super + {t,shift + t}
 	bspc node -t {tiled,pseudo_tiled}
 
-super + space
+super + shift + space
   bspc node -t \~floating
 
 super + f
@@ -133,6 +136,4 @@ super + shift + minus
   bspc node -g hidden=on
 
 super + minus
-  NODES=$(bspc query -N -n .hidden | tail -n1); \
-  bspc node $NODES -g hidden=off; \
-  bspc node -f $NODES;
+  bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off -f
