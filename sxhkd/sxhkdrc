@@ -61,8 +61,8 @@ super + {_,shift + }Tab
 super + BackSpace
   bspc node -f last
 
-super + {F1, F2}
-	bspc monitor -f {prev,next}
+super + {F1, F2, F3}
+	bspc monitor -f ^{1,2,3}
 
 super + {o,i}
 	bspc wm -h off; \
@@ -136,7 +136,7 @@ super + {_,shift + }e
   bspc node {--equalize,--balance}
 
 # state
-super + {x,z}
+super + {q,x}
 	bspc node -g {marked, sticky}
 
 super + shift + minus
