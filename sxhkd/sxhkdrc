@@ -32,7 +32,8 @@ XF86AudioMute
   ponymix toggle
 
 super + XF86AudioMute
-  ponymix --input toggle
+  ponymix --input toggle; \
+  notify-send $(ponymix --input is-muted && echo "Mic: muted" || echo "Mic: unmuted")
 
 #
 # bspwm + sxhkd
