@@ -1,12 +1,12 @@
 setxkbmap es &
 
+~/.config/polybar/launch.sh &
+
 wmname LG3D &
 feh --bg-scale ~/.background.jpg
 dunst -conf ~/.dunstrc &
 nm-applet &
 sxhkd &
-
-~/.config/polybar/launch.sh &
 
 term.sh &
 

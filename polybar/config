@@ -12,6 +12,8 @@ width = 100%
 height = 20
 radius = 0
 fixed-center = false
+wm-restack=bspwm
+override-redirect=false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
