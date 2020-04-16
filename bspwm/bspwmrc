@@ -1,7 +1,12 @@
 #!/bin/sh
 
-bspc config border_width 2
-bspc config window_gap 0
+BW=2
+bspc config border_width $BW
+bspc config window_gap -$BW
+for side in top right bottom left ; do
+	bspc config ${side}_padding $BW
+done
+
 bspc config focused_border_color "#FF0000"
 bspc config active_border_color "#20639B"
 
@@ -18,5 +23,6 @@ else
  bspc monitor -d I II III IV V VI VII VIII IX X
 fi
 
-bspc rule -a scratchpad state=floating
+# bspc rule -a scratchpad state=floating
 bspc rule -a Zathura state=tiled
+

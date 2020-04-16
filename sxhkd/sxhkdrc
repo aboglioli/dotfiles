@@ -2,10 +2,10 @@
 # Launcher
 #
 super + Return
-  st -e "tmux"
+  term.sh
 
 super + shift + Return
-  st -c scratchpad -e "tmux"
+  st -e "tmux"
 
 super + d
   rofi -show run
@@ -29,11 +29,12 @@ XF86AudioLowerVolume
   ponymix decrease 3
 
 XF86AudioMute
-  ponymix toggle
+  ponymix toggle; \
+  notify-send -u low -t 1000 Audio $(ponymix is-muted && echo "off" || echo "on")
 
 super + XF86AudioMute
   ponymix --input toggle; \
-  notify-send $(ponymix --input is-muted && echo "Mic: muted" || echo "Mic: unmuted")
+  notify-send -u low -t 1000 Mic $(ponymix --input is-muted && echo "off" || echo "on")
 
 #
 # bspwm + sxhkd
@@ -48,18 +49,24 @@ super + alt + {q,r}
 super + {_,shift + }w
 	bspc node -{c,k}
 
+super + ctrl + w
+  bspc query -N -n .\!focused.local.leaf | xargs -I id -n 1 bspc node id -c
+
 # navigation/selection
 super + {Left,Down,Up,Right}
 	bspc node -f {west,south,north,east}
 
-super + {a,b,comma,period}
+super + {a,shift + a,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-super + {_,shift + }Tab
-	bspc node -f {next,prev}.local
+super + alt + {Left,Right}
+	bspc node -f {prev,next}.local
 
-super + BackSpace
+super + Tab
   bspc node -f last
+
+super + shift + Tab
+  bspc node -s last
 
 super + {F1, F2, F3}
 	bspc monitor -f ^{1,2,3}
@@ -85,7 +92,7 @@ super + shift + space
 super + f
   bspc node -t \~fullscreen
 
-super + m
+super + shift + f
 	bspc desktop -l next
 
 # move/swap/resize/rotate
@@ -96,7 +103,7 @@ super + {shift + , shift + ctrl + }{Left,Down,Up,Right}
 	bspc node -{s,n} {west,south,north,east}
 
 super + g
-	bspc node -s biggest
+	bspc node -f biggest.local
 
 super + shift + g
 	bspc node -s biggest.local
@@ -141,11 +148,3 @@ super + {q,x}
 
 super + shift + q
 	bspc query -N -n .marked | xargs -I id -n 1 bspc node id -g marked=off
-
-super + shift + minus
-  SCRATCHPAD=$(xdo id -N scratchpad || echo "nop"); \
-  bspc node $SCRATCHPAD -g hidden=on
-
-super + minus
-  SCRATCHPAD=$(xdo id -N scratchpad || echo "nop"); \
-  bspc node $SCRATCHPAD -d focused -g hidden=off -f
