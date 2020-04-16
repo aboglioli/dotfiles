@@ -112,8 +112,10 @@ super + shift + g
 	bspc node -s biggest.local
 
 super + {_,shift + }s
-  bspc node -{s,n} newest.marked; \
-  bspc node newest.marked -g marked=off
+  bspc node -{s,n} any.marked
+
+super + ctrl + s
+  bspc query -N -n any.marked | xargs -I id -n 1 bspc node id -d focused
 
 super + ctrl + {Left,Down,Up,Right}
 	bspc node -p {west,south,north,east}
@@ -146,8 +148,12 @@ super + {_,shift + }e
   bspc node {--equalize,--balance}
 
 # state
-super + {q,x}
-	bspc node -g {marked, sticky}
+super + x
+  bspc node -g sticky
+
+super + q
+  bspc node last.marked -g marked; \
+  bspc node -g marked
 
 super + shift + q
-	bspc query -N -n .marked | xargs -I id -n 1 bspc node id -g marked=off
+  bspc query -N -n .marked | xargs -I id -n 1 bspc node id -g marked=off
