@@ -12,8 +12,8 @@ export KEYTIMEOUT=1
 
 PS1+='${VIMODE}'
 function zle-line-init zle-keymap-select {
-    DOLLAR='%B%F{green}$%f%b '
-    GIANT_I='%B%F{red}@%f%b '
+    DOLLAR='%B%F{green}I%f%b '
+    GIANT_I='%B%F{red}N%f%b '
     VIMODE="${${KEYMAP/vicmd/$GIANT_I}/(main|viins)/$DOLLAR}"
     zle reset-prompt
 }
