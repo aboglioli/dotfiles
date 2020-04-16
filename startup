@@ -6,10 +6,10 @@ wmname LG3D &
 feh --bg-scale ~/.background.jpg
 dunst -conf ~/.dunstrc &
 nm-applet &
-sxhkd &
 
+sxhkd &
 term.sh &
+numlockx
 
 # redshift -l -32.883331:-68.699997 &
-# numlockx
 # unclutter -idle 1 -jitter 5 -noevents -root &

@@ -63,10 +63,10 @@ super + alt + {Left,Right}
 	bspc node -f {prev,next}.local
 
 super + Tab
-  bspc node -f last
+  bspc desktop -f last
 
 super + shift + Tab
-  bspc node -s last
+  bspc node -d last
 
 super + {F1, F2, F3}
 	bspc monitor -f ^{1,2,3}
