@@ -71,6 +71,9 @@ super + shift + Tab
 super + {F1, F2, F3}
 	bspc monitor -f ^{1,2,3}
 
+super + shift + {F1, F2, F3}
+	bspc node -m ^{1,2,3}
+
 super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \

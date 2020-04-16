@@ -25,4 +25,3 @@ fi
 
 # bspc rule -a scratchpad state=floating
 bspc rule -a Zathura state=tiled
-
