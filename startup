@@ -8,6 +8,8 @@ sxhkd &
 
 ~/.config/polybar/launch.sh &
 
+st -c scratchpad -e "tmux" &
+
 # redshift -l -32.883331:-68.699997 &
 # numlockx
 # unclutter -idle 1 -jitter 5 -noevents -root &

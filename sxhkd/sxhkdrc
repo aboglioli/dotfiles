@@ -139,9 +139,13 @@ super + {_,shift + }e
 super + {q,x}
 	bspc node -g {marked, sticky}
 
+super + shift + q
+	bspc query -N -n .marked | xargs -I id -n 1 bspc node id -g marked=off
+
 super + shift + minus
-  bspc node -g hidden=on
+  SCRATCHPAD=$(xdo id -N scratchpad || echo "nop"); \
+  bspc node $SCRATCHPAD -g hidden=on
 
 super + minus
-  NODES=$(bspc query -N -n .hidden | tail -n1); \
-  bspc node $NODES -d focused -g hidden=off -f
+  SCRATCHPAD=$(xdo id -N scratchpad || echo "nop"); \
+  bspc node $SCRATCHPAD -d focused -g hidden=off -f

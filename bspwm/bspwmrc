@@ -18,4 +18,5 @@ else
  bspc monitor -d I II III IV V VI VII VIII IX X
 fi
 
-bspc rule -a scratchpad sticky=on state=floating
+bspc rule -a scratchpad state=floating
+bspc rule -a Zathura state=tiled
