@@ -10,6 +10,7 @@ nm-applet &
 sxhkd &
 term.sh &
 numlockx
+xsetroot -cursor_name left_ptr
 
 # redshift -l -32.883331:-68.699997 &
 # unclutter -idle 1 -jitter 5 -noevents -root &
