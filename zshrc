@@ -38,10 +38,12 @@ export AWT_TOOLKIT=MToolkit
 # Aliases
 alias v="nvim"
 alias dev="cd ~/dev"
-alias temp="cd ~/temp"
 
 alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias tl="tree -L 2"
+
+alias ds='pwd > /tmp/cwd'
+alias dr='cd "$(</tmp/cwd)"'
 
 alias dco="docker-compose"
 
