@@ -59,9 +59,11 @@ fuzzy-match = true
 
 ws-icon-default = ♟
 
-format = <label-state> <label-mode>
+format = <label-monitor><label-state><label-mode>
 
-label-monitor = %name%
+label-monitor = ♞
+label-monitor-foreground = #888
+label-monitor-padding = 2
 
 label-monocle = :M
 label-monocle-foreground = ${colors.secondary}
