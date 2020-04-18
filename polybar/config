@@ -61,7 +61,7 @@ ws-icon-default = ♟
 
 format = <label-state> <label-mode>
 
-label-monitor = %name%:
+label-monitor = %name%
 
 label-monocle = :M
 label-monocle-foreground = ${colors.secondary}
@@ -78,9 +78,9 @@ label-urgent = %name%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %icon%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty =
+# label-empty-foreground = ${colors.foreground-alt}
+# label-empty-padding = 2
 
 label-dimmed-foreground = #555
 label-dimmed-focused-background = #222
