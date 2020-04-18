@@ -2,6 +2,9 @@
 
 ID=$(xdotool search --class gterm)
 FOCUSED_ID=$(bspc query -N -n focused)
+FOCUSED_ID=$(printf %d $FOCUSED_ID)
+
+echo $ID $FOCUSED_ID
 
 if [ -z "$ID" ]; then
   st -c gterm -e "tmux"
