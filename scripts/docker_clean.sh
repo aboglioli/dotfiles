@@ -1,6 +1,7 @@
 #/bin/bash
 
-docker stop `docker ps -q`
-docker rm `docker ps -aq`
+docker rmi $(docker images -qf dangling=true)
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
 docker volume prune
 docker network prune

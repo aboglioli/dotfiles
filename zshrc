@@ -25,7 +25,7 @@ export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
 export YARNPATH="$HOME/.yarn"
 export PYENVPATH="$HOME/.pyenv"
-export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:/home/kiriost/.gem/ruby/2.3.0/bin:/usr/local/heroku/bin:./vendor/bin:./node_modules/.bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH:$PYENVPATH/bin"
+export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:./vendor/bin:./node_modules/.bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH:$PYENVPATH/bin"
 
 export TERM=xterm-256color
 export EDITOR=nvim
@@ -48,7 +48,7 @@ alias dco="docker-compose"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 export ANDROID_HOME="$HOME/Android/Sdk"
 
-export NVM_DIR="/home/kiriost/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

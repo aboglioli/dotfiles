@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ID=$(xdo id -N gterm)
+ID=$(xdotool search --class gterm)
 FOCUSED_ID=$(bspc query -N -n focused)
 
 if [ -z "$ID" ]; then

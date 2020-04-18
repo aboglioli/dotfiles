@@ -1,5 +1,8 @@
-#!/bin/bash
-SRC=$PWD
+#!/bin/sh
+SRC=~/dotfiles
+
+mkdir ~/.config \
+  ~/.i3
 
 # Remove old files and link new files
 ln -sf $SRC/background.jpg ~/.background.jpg
@@ -19,16 +22,11 @@ ln -sf $SRC/fonts ~/.fonts
 fc-cache -vf
 
 ln -sf $SRC/gitconfig ~/.gitconfig
-mkdir ~/.i3
 ln -sf $SRC/i3/config ~/.i3/config
 ln -sf $SRC/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC/notification.ogg ~/.notification.ogg
 
 ln -sf $SRC/startup ~/.startup
-
-# Terminator
-mkdir ~/.config/terminator
-ln -sf $SRC/terminator/config ~/.config/terminator/config
 
 ln -sf $SRC/tmux.conf ~/.tmux.conf
 
