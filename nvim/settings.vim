@@ -1,5 +1,5 @@
 set number
-set noshowcmd
+" set noshowcmd
 set clipboard=unnamed
 set hidden
 set expandtab
