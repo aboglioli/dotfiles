@@ -16,8 +16,13 @@ super + shift + d
 super + F12
   rofi -show window
 
-Print
-	scrot -q 100
+@Print
+  NAME=$(date +"%Y-%m-%d_%H%M%S").png; \
+	scrot -s ~/screenshots/$NAME; \
+  notify-send -u low -t 1000 Screenshot $NAME
+
+super + Print
+  rm ~/screenshots/*.png
 
 #
 # External
@@ -63,10 +68,10 @@ super + alt + {Left,Right}
 	bspc node -f {prev,next}.local
 
 super + Tab
-  bspc desktop -f last
+  bspc node -f last
 
 super + shift + Tab
-  bspc node -d last
+  bspc node -s last
 
 super + {F1, F2, F3}
 	bspc monitor -f ^{1,2,3}
