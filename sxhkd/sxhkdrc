@@ -141,10 +141,10 @@ super + {h,v}
   bspc node -F {horizontal,vertical}
 
 super + shift + r : {Left,Right}
-  INC={-10,+10}; bspc node @east -r $INC || bspc node @west -r $INC
+  INC={-50,+50}; bspc node @east -r $INC || bspc node @west -r $INC
 
 super + shift + r : {Down,Up}
-  INC={+10,-10}; bspc node @north -r $INC || bspc node @south -r $INC
+  INC={+50,-50}; bspc node @north -r $INC || bspc node @south -r $INC
 
 super + {_,shift + }c
   bspc node --circulate {forward,backward}
