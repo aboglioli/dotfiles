@@ -1,0 +1,32 @@
+# Main
+bspwm
+docker
+docker-compose
+docker-machine
+dunst
+firefox
+mpv
+neovim
+polybar
+ranger
+sxhkd
+sxiv
+tmux
+zathura
+zathura-pdf-mupdf
+zsh
+
+# Extras
+feh
+network-manager-applet
+numlockx
+picom
+wmname
+xdotool
+xorg-setxkbmap
+xorg-xsetroot
+
+# Direct installation
+fzf
+oh-my-zsh
+st
