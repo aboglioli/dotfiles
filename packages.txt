@@ -5,6 +5,7 @@ docker-compose
 docker-machine
 dunst
 firefox
+go
 mpv
 neovim
 polybar
@@ -28,5 +29,7 @@ xorg-xsetroot
 
 # Direct installation
 fzf
+nvm
 oh-my-zsh
+rustup
 st

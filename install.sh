@@ -7,9 +7,7 @@ mkdir ~/.config \
 # Remove old files and link new files
 ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/bashrc ~/.bashrc
-ln -sf $SRC/compton.conf ~/.config/compton.conf
 ln -sf $SRC/dunstrc ~/.dunstrc
-ln -sf $SRC/alacritty.yml ~/.alacritty.yml
 
 ln -sf $SRC/sxhkd ~/.config/sxhkd
 ln -sf $SRC/bspwm ~/.config/bspwm
