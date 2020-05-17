@@ -1,6 +1,8 @@
 #!/bin/sh
 SRC=~/dotfiles
 
+mkdir $SRC/fonts
+
 mkdir ~/.config \
   ~/.i3
 
@@ -8,6 +10,7 @@ mkdir ~/.config \
 ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/bashrc ~/.bashrc
 ln -sf $SRC/dunstrc ~/.dunstrc
+ln -sf $SRC/zshrc ~/.zshrc
 
 ln -sf $SRC/sxhkd ~/.config/sxhkd
 ln -sf $SRC/bspwm ~/.config/bspwm
@@ -34,5 +37,3 @@ ln -sf $SRC/nvim ~/.config/nvim
 # Xresources
 ln -sf $SRC/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
-
-ln -sf $SRC/zshrc ~/.zshrc
