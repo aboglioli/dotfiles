@@ -1,4 +1,5 @@
-set number
+" set number
+set relativenumber
 " set noshowcmd
 set clipboard=unnamed
 set hidden
