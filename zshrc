@@ -33,7 +33,7 @@ export EDITOR=nvim
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR
 export PAGER=less
-export BROWSER=google-chrome-stable
+export BROWSER=brave
 export AWT_TOOLKIT=MToolkit
 
 # Aliases
