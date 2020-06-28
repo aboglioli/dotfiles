@@ -14,6 +14,8 @@ set noshowmode
 set autoindent
 " set autochdir
 set autoread
+set splitbelow
+set splitright
 set nobackup
 set nowritebackup
 set noswapfile
