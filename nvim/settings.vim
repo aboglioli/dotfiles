@@ -20,7 +20,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set updatetime=300
-set cmdheight=2
+set cmdheight=1
 set shortmess+=c
 set signcolumn=yes
 set colorcolumn=120
@@ -31,9 +31,3 @@ set scrolloff=2
 set sidescrolloff=5
 set list
 set listchars=eol:~,tab:\|-,extends:>,precedes:<,nbsp:_,trail:~
-
-"" Plugins
-lua << EOF
-  local nvim_lsp = require'nvim_lsp'
-  nvim_lsp.gopls.setup{}
-EOF
