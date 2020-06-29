@@ -21,7 +21,3 @@ nnoremap <silent> <leader>l :BLines<CR>
 nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 
 nnoremap <silent> <leader><tab> :b#<CR>
-
-nnoremap <silent> <leader>gd <Plug>(coc-definition)
-nnoremap <silent> <leader>gr <Plug>(coc-references)
-nnoremap <silent> <leader>gi <Plug>(coc-implementation)

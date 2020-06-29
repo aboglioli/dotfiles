@@ -39,6 +39,8 @@ lua require'nvim_lsp'.tsserver.setup{}
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 "" lightline
 let g:lightline = { 'colorscheme': 'one' }
