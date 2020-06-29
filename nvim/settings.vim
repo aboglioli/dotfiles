@@ -31,3 +31,9 @@ set scrolloff=2
 set sidescrolloff=5
 set list
 set listchars=eol:~,tab:\|-,extends:>,precedes:<,nbsp:_,trail:~
+
+"" Plugins
+lua << EOF
+  local nvim_lsp = require'nvim_lsp'
+  nvim_lsp.gopls.setup{}
+EOF

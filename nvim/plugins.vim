@@ -1,7 +1,10 @@
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neovim/nvim-lsp'
+Plug 'Chiel92/vim-autoformat'
+" Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -35,18 +38,18 @@ let g:lightline = { 'colorscheme': 'one' }
 "" fzf
 function! s:update_fzf_colors()
   let rules =
-  \ { 'fg':      [['Normal',       'fg']],
-    \ 'bg':      [['Normal',       'bg']],
-    \ 'hl':      [['Comment',      'fg']],
-    \ 'fg+':     [['CursorColumn', 'fg'], ['Normal', 'fg']],
-    \ 'bg+':     [['CursorColumn', 'bg']],
-    \ 'hl+':     [['Statement',    'fg']],
-    \ 'info':    [['PreProc',      'fg']],
-    \ 'prompt':  [['Conditional',  'fg']],
-    \ 'pointer': [['Exception',    'fg']],
-    \ 'marker':  [['Keyword',      'fg']],
-    \ 'spinner': [['Label',        'fg']],
-    \ 'header':  [['Comment',      'fg']] }
+        \ { 'fg':      [['Normal',       'fg']],
+        \ 'bg':      [['Normal',       'bg']],
+        \ 'hl':      [['Comment',      'fg']],
+        \ 'fg+':     [['CursorColumn', 'fg'], ['Normal', 'fg']],
+        \ 'bg+':     [['CursorColumn', 'bg']],
+        \ 'hl+':     [['Statement',    'fg']],
+        \ 'info':    [['PreProc',      'fg']],
+        \ 'prompt':  [['Conditional',  'fg']],
+        \ 'pointer': [['Exception',    'fg']],
+        \ 'marker':  [['Keyword',      'fg']],
+        \ 'spinner': [['Label',        'fg']],
+        \ 'header':  [['Comment',      'fg']] }
   let cols = []
   for [name, pairs] in items(rules)
     for pair in pairs
@@ -82,18 +85,19 @@ let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
 
 "" coc.vim
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-inoremap <silent><expr> <c-space> coc#refresh()
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-autocmd CursorHold * silent call CocActionAsync('highlight')
-nmap <leader>rn <Plug>(coc-rename)
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
+" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"
+" function! s:check_back_space() abort
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~# '\s'
+" endfunction
+"
+" inoremap <silent><expr> <c-space> coc#refresh()
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
+" autocmd CursorHold * silent call CocActionAsync('highlight')
+" nmap <leader>rn <Plug>(coc-rename)
+" setup rust_analyzer LSP (IDE features)
