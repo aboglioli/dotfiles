@@ -14,6 +14,7 @@ nnoremap <silent> <leader>w <C-W>
 nnoremap <silent> <C-P> :Files<CR>
 nnoremap <silent> <leader>p :GFiles<CR>
 nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
+nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>s :Rg<CR>
 nnoremap <silent> <leader>l :BLines<CR>

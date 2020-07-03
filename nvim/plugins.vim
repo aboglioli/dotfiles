@@ -1,7 +1,11 @@
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'neovim/nvim-lsp'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-lsp'
+" Unstable
+" Plug 'neovim/nvim-lsp'
+
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'dense-analysis/ale'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete-lsp'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -27,6 +31,7 @@ Plug 'mhartington/oceanic-next'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'mattn/emmet-vim'
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'rust-lang/rust.vim'
@@ -34,8 +39,8 @@ call plug#end()
 
 " Configuration
 "" nvim-lsp
-lua require'nvim_lsp'.gopls.setup{}
-lua require'nvim_lsp'.tsserver.setup{}
+" lua require'nvim_lsp'.gopls.setup{}
+" lua require'nvim_lsp'.tsserver.setup{}
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
