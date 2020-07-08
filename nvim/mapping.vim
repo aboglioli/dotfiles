@@ -12,7 +12,7 @@ nnoremap <silent> <leader>wd <C-W>q
 nnoremap <silent> <leader>w <C-W>
 
 nnoremap <silent> <C-P> :Files<CR>
-nnoremap <silent> <leader>p :GFiles<CR>
+nnoremap <silent> <leader>p :Files %:h<CR>
 nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
