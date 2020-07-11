@@ -37,3 +37,6 @@ ln -sf $SRC/nvim ~/.config/nvim
 # Xresources
 ln -sf $SRC/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
+
+# Zathura
+ln -sf $SRC/zathura ~/.config/zathura
