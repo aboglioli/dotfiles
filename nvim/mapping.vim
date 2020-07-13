@@ -22,3 +22,5 @@ nnoremap <silent> <leader>l :BLines<CR>
 nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 
 nnoremap <silent> <leader><tab> :b#<CR>
+
+command Bdo %bd|e#
