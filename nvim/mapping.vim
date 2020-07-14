@@ -23,4 +23,4 @@ nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 
 nnoremap <silent> <leader><tab> :b#<CR>
 
-command Bdo %bd|e#
+command! Bdo %bd|e#
