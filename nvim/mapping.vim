@@ -4,11 +4,6 @@ map <silent> <Leader>r :source ~/.config/nvim/init.vim<CR>:echo "NVIM Reloaded"<
 " Keybindings
 nnoremap <silent> <F2> :bp<CR>
 nnoremap <silent> <F3> :bn<CR>
-nnoremap <silent> <leader>ws :split<CR>
-nnoremap <silent> <leader>wv :vsplit<CR>
-nnoremap <silent> <leader>wS :split<CR><C-W>w
-nnoremap <silent> <leader>wV :vsplit<CR><C-W>w
-nnoremap <silent> <leader>wd <C-W>q
 nnoremap <silent> <leader>w <C-W>
 
 nnoremap <silent> <C-P> :Files<CR>
