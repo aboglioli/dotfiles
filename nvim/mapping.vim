@@ -6,7 +6,7 @@ nnoremap <silent> <F2> :bp<CR>
 nnoremap <silent> <F3> :bn<CR>
 nnoremap <silent> <leader>w <C-W>
 
-nnoremap <silent> <C-P> :Files<CR>
+nnoremap <silent> <C-P> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <silent> <leader>p :Files %:h<CR>
 nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>

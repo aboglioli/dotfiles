@@ -51,6 +51,8 @@ inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 let g:lightline = { 'colorscheme': 'one' }
 
 "" fzf
+" let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
+
 function! s:update_fzf_colors()
   let rules =
         \ { 'fg':      [['Normal',       'fg']],
