@@ -19,3 +19,6 @@ nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 nnoremap <silent> <leader><tab> :b#<CR>
 
 command! Bdo %bd|e#
+
+" For specific files
+autocmd FileType rust nnoremap <buffer> <C-T> :RustTest<CR>
