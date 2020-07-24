@@ -23,11 +23,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'camspiers/lens.vim'
 
 "" Themes
+Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
-Plug 'sickill/vim-monokai'
-Plug 'iCyMind/NeoSolarized'
-Plug 'joshdick/onedark.vim'
 Plug 'mhartington/oceanic-next'
+Plug 'chriskempson/base16-vim'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'joshdick/onedark.vim'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -48,44 +49,10 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 "" lightline
-let g:lightline = { 'colorscheme': 'one' }
+let g:lightline = { 'colorscheme': 'onedark' }
 
 "" fzf
 " let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
-
-function! s:update_fzf_colors()
-  let rules =
-        \ { 'fg':      [['Normal',       'fg']],
-        \ 'bg':      [['Normal',       'bg']],
-        \ 'hl':      [['Comment',      'fg']],
-        \ 'fg+':     [['CursorColumn', 'fg'], ['Normal', 'fg']],
-        \ 'bg+':     [['CursorColumn', 'bg']],
-        \ 'hl+':     [['Statement',    'fg']],
-        \ 'info':    [['PreProc',      'fg']],
-        \ 'prompt':  [['Conditional',  'fg']],
-        \ 'pointer': [['Exception',    'fg']],
-        \ 'marker':  [['Keyword',      'fg']],
-        \ 'spinner': [['Label',        'fg']],
-        \ 'header':  [['Comment',      'fg']] }
-  let cols = []
-  for [name, pairs] in items(rules)
-    for pair in pairs
-      let code = synIDattr(synIDtrans(hlID(pair[0])), pair[1])
-      if !empty(name) && code > 0
-        call add(cols, name.':'.code)
-        break
-      endif
-    endfor
-  endfor
-  let s:orig_fzf_default_opts = get(s:, 'orig_fzf_default_opts', $FZF_DEFAULT_OPTS)
-  let $FZF_DEFAULT_OPTS = s:orig_fzf_default_opts .
-        \ empty(cols) ? '' : (' --color='.join(cols, ','))
-endfunction
-
-augroup _fzf
-  autocmd!
-  autocmd ColorScheme * call <sid>update_fzf_colors()
-augroup END
 
 "" vim-go
 let g:go_highlight_build_constraints = 1

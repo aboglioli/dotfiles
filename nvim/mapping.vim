@@ -8,6 +8,7 @@ nnoremap <silent> <leader>w <C-W>
 
 nnoremap <silent> <C-P> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <silent> <leader>p :Files %:h<CR>
+nnoremap <silent> <leader>o :Files %:h/..<CR>
 nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
