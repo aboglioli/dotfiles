@@ -1,3 +1,3 @@
 syntax on
 set background=dark
-colorscheme onedark
+colorscheme base16-onedark

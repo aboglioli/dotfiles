@@ -23,12 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'camspiers/lens.vim'
 
 "" Themes
-Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
-Plug 'mhartington/oceanic-next'
 Plug 'chriskempson/base16-vim'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'joshdick/onedark.vim'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
