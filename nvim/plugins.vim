@@ -44,7 +44,7 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 "" lightline
-let g:lightline = { 'colorscheme': 'onedark' }
+" let g:lightline = { 'colorscheme': 'onedark' }
 
 "" fzf
 " let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
