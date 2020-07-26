@@ -22,6 +22,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'camspiers/lens.vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'stefandtw/quickfix-reflector.vim'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
