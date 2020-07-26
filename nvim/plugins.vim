@@ -48,6 +48,9 @@ endif
 "" fzf
 " let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
 
+"" lightline
+let g:lightline = { 'colorscheme': 'wombat' }
+
 "" vim-go
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
