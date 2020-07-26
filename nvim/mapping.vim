@@ -14,10 +14,13 @@ nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>s :Rg<CR>
 nnoremap <silent> <leader>l :BLines<CR>
+nnoremap <silent> <leader>t :BTags<CR>
 
 nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 
 nnoremap <silent> <leader><tab> :b#<CR>
+
+nnoremap <leader>i :%s/<C-R><C-W>//g<Left><Left>
 
 command! Bdo %bd|e#
 

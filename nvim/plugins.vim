@@ -21,6 +21,7 @@ Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'camspiers/lens.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
