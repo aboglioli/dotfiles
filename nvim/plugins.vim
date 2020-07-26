@@ -34,18 +34,15 @@ Plug 'leafgarland/typescript-vim'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
-" Configuration
-"" nvim-lsp
-" lua require'nvim_lsp'.gopls.setup{}
-" lua require'nvim_lsp'.tsserver.setup{}
-
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
-"" lightline
-" let g:lightline = { 'colorscheme': 'onedark' }
+" gutentags
+if executable('rg')
+  let g:gutentags_file_list_command = 'rg --files'
+endif
 
 "" fzf
 " let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
