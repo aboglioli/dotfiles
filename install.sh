@@ -6,9 +6,6 @@ mkdir $SRC/fonts
 mkdir ~/.config \
   ~/.i3
 
-# Dependencies
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-
 # Remove old files and link new files
 ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/bashrc ~/.bashrc

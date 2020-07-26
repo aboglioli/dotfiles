@@ -1,10 +1,10 @@
 # Main
 bspwm
+ctags
 docker
 docker-compose
 docker-machine
 dunst
-firefox
 go
 mpv
 neovim

@@ -20,9 +20,13 @@ nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 
 nnoremap <silent> <leader><tab> :b#<CR>
 
-nnoremap <leader>i :%s/<C-R><C-W>//g<Left><Left>
+nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
+nnoremap <silent> <leader>] :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
 
 command! Bdo %bd|e#
+
+noremap 0 ^
+noremap ^ 0
 
 " For specific files
 autocmd FileType rust nnoremap <buffer> <C-T> :RustTest<CR>
