@@ -21,6 +21,7 @@ nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
 nnoremap <silent> <leader><tab> :b#<CR>
 
 nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
+vnoremap <leader>i y :%s/<C-R>"//g<Left><Left>
 nnoremap <silent> <leader>] :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
 
 command! Bdo %bd|e#
