@@ -37,7 +37,7 @@ export BROWSER=brave
 export AWT_TOOLKIT=MToolkit
 
 # Aliases
-alias v="nvim.appimage"
+alias v="nvim"
 alias dev="cd ~/dev"
 
 alias tt='cd "./$(git rev-parse --show-cdup)"'

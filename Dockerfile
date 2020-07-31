@@ -1,28 +1,32 @@
 FROM alpine:latest
 
+ENV USER=kiriost
+ENV UID=1000
+ENV PASSWD=1234
+
 # edge repository
 RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
 
 RUN apk update && apk upgrade
 RUN apk add \
-  bash zsh zsh-vcs tmux curl fzf \
-  x11vnc xvfb \
-  sxhkd bspwm xdotool feh st rofi \
-  git neovim
-# add build-base to compile
+  sudo bash zsh zsh-vcs \
+  tmux curl fzf ripgrep \
+  perl git neovim ctags \
+  nodejs-current yarn npm
 
-WORKDIR /root
+RUN adduser -h /home/$USER -s /bin/zsh -S $USER -u $UID -G users \
+  && addgroup kiriost wheel \
+  && echo "$USER:$PASSWD" | chpasswd
+RUN echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
+USER $USER
 
-# oh-my-zsh
-RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# neovim
-RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+WORKDIR /home/$USER
 
 # dotfiles
 RUN mkdir dotfiles
 COPY . ./dotfiles
-RUN ./dotfiles/install.sh
+RUN ./dotfiles/base.sh
+
+VOLUME ["~/dev"]
 
 CMD ["/bin/zsh"]
