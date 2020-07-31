@@ -10,8 +10,8 @@ RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
 RUN apk update && apk upgrade
 RUN apk add \
   sudo bash zsh zsh-vcs \
-  tmux curl fzf ripgrep \
-  perl git neovim ctags \
+  tmux curl ripgrep \
+  openssh perl git neovim ctags \
   nodejs-current yarn npm
 
 RUN adduser -h /home/$USER -s /bin/zsh -S $USER -u $UID -G users \
@@ -26,7 +26,5 @@ WORKDIR /home/$USER
 RUN mkdir dotfiles
 COPY . ./dotfiles
 RUN ./dotfiles/base.sh
-
-VOLUME ["~/dev"]
 
 CMD ["/bin/zsh"]
