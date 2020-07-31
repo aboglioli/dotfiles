@@ -8,21 +8,20 @@ nnoremap <silent> <leader>w :w<CR>
 
 nnoremap <silent> <C-P> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <silent> <leader>p :Files %:h<CR>
-nnoremap <silent> <leader>o :Files %:h/..<CR>
 nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>l :BLines<CR>
 nnoremap <silent> <leader>t :BTags<CR>
 
-nnoremap <silent> <leader>c :echo expand("%:h")<CR>:e %:h/
-
 nnoremap <silent> <leader><tab> :b#<CR>
 
-nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
-vnoremap <leader>i y :%s/<C-R>"//g<Left><Left>
 nnoremap <silent> <leader>] :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
 
+nnoremap <leader>o :Files %:h/../
+nnoremap <leader>c :echo expand("%:h")<CR>:e %:h/
+nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
+vnoremap <leader>i y :%s/<C-R>"//g<Left><Left>
 nnoremap <leader>gs :CocSearch <C-R><C-W>
 vnoremap <leader>gs y :CocSearch <C-R>"
 nnoremap <leader>s :Rg <C-R><C-W>
