@@ -10,7 +10,7 @@ RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
 RUN apk update && apk upgrade
 RUN apk add \
   sudo bash zsh zsh-vcs \
-  tmux curl ripgrep \
+  tmux curl fzf ripgrep \
   openssh perl git neovim ctags \
   nodejs-current yarn npm
 
@@ -26,5 +26,6 @@ WORKDIR /home/$USER
 RUN mkdir dotfiles
 COPY . ./dotfiles
 RUN ./dotfiles/base.sh
+RUN nvim +PlugInstall +qa
 
 CMD ["/bin/zsh"]
