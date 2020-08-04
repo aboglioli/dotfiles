@@ -64,3 +64,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # Base16 fzf
 source ~/.config/base16-fzf/bash/base16-gruvbox-dark-medium.config
+
+eval "$(starship init zsh)"

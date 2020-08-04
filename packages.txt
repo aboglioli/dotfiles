@@ -33,3 +33,15 @@ nvm
 oh-my-zsh
 rustup
 st
+
+
+# Cargo binaries
+## https://zaiste.net/posts/shell-commands-rust
+bat
+du-dust
+fd-find
+ripgrep
+ruplacer
+sd
+starship
+tokei
