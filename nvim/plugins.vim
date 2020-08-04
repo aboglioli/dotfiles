@@ -67,4 +67,5 @@ let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
 
 " indentLine
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char_list = ['┊']
