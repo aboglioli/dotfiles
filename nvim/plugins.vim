@@ -23,6 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'camspiers/lens.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'Yggdroot/indentLine'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
@@ -64,3 +65,6 @@ let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
+
+" indentLine
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']

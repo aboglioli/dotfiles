@@ -30,7 +30,7 @@ set autoread
 set scrolloff=2
 set sidescrolloff=5
 set list
-set listchars=eol:~,tab:\|-,extends:>,precedes:<,nbsp:_,trail:~
+set listchars=tab:\┊\ 
 set inccommand=split
 
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow

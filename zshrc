@@ -1,3 +1,4 @@
+
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="kolo"
@@ -26,7 +27,7 @@ export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
 export YARNPATH="$HOME/.yarn"
 export PYENVPATH="$HOME/.pyenv"
-export PATH="$HOME/bin:$HOME/dotfiles/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin:./vendor/bin:./node_modules/.bin:$LOCAL/bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PATH:$PYENVPATH/bin"
+export PATH="./vendor/bin:./node_modules/.bin:$HOME/bin:$HOME/dotfiles/scripts:$LOCAL/bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PYENVPATH/bin:$PATH"
 
 export TERM=screen-256color
 export EDITOR=nvim
@@ -41,14 +42,10 @@ alias v="nvim"
 alias dev="cd ~/dev"
 
 alias tt='cd "./$(git rev-parse --show-cdup)"'
-alias tl="tree -L 2"
 
 alias ds='pwd > /tmp/cwd'
 alias dr='cd "$(</tmp/cwd)"'
 
-alias dco="docker-compose"
-
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 export ANDROID_HOME="$HOME/Android/Sdk"
 
 export NVM_DIR="$HOME/.nvm"
@@ -66,3 +63,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 source ~/.config/base16-fzf/bash/base16-gruvbox-dark-medium.config
 
 eval "$(starship init zsh)"
+
