@@ -38,5 +38,7 @@ command! Bdo %bd|e#
 noremap 0 ^
 noremap ^ 0
 
+tnoremap <C-w> <C-\><C-n>
+
 " For specific files
 autocmd FileType rust nnoremap <buffer> <C-T> :RustTest<CR>

@@ -23,7 +23,7 @@ set updatetime=300
 set cmdheight=1
 set shortmess+=c
 set signcolumn=yes
-set colorcolumn=120
+set colorcolumn=100
 set ignorecase
 set smartcase
 set autoread
