@@ -1,4 +1,3 @@
-
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="kolo"
@@ -63,4 +62,3 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 source ~/.config/base16-fzf/bash/base16-gruvbox-dark-medium.config
 
 eval "$(starship init zsh)"
-

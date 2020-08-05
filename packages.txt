@@ -34,7 +34,6 @@ oh-my-zsh
 rustup
 st
 
-
 # Cargo binaries
 ## https://zaiste.net/posts/shell-commands-rust
 bat
