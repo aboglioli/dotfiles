@@ -1,10 +1,8 @@
 export ZSH=$HOME/.oh-my-zsh
-
 ZSH_THEME="kolo"
-
-plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
+
+eval "$(starship init zsh)"
 
 # VIM mode
 bindkey -v
@@ -21,6 +19,8 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 
 # Environment variables
+export TERM=xterm-256color
+
 export LOCAL="$HOME/.local"
 export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
@@ -28,7 +28,6 @@ export YARNPATH="$HOME/.yarn"
 export PYENVPATH="$HOME/.pyenv"
 export PATH="./vendor/bin:./node_modules/.bin:$HOME/bin:$HOME/dotfiles/scripts:$LOCAL/bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PYENVPATH/bin:$PATH"
 
-export TERM=screen-256color
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR
@@ -60,5 +59,3 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # Base16 fzf
 source ~/.config/base16-fzf/bash/base16-gruvbox-dark-medium.config
-
-eval "$(starship init zsh)"

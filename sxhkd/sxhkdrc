@@ -5,7 +5,7 @@ super + Return
   term.sh
 
 super + shift + Return
-  st -e "tmux"
+  alacritty
 
 super + d
   rofi -show run

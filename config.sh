@@ -3,6 +3,9 @@ SRC=~/dotfiles
 
 mkdir $SRC/fonts ~/.config ~/.i3
 
+ln -sf $SRC/alacritty.yml ~/.alacritty.yml
+ln -sf $SRC/starship.toml ~/.config/starship.toml
+
 ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/dunstrc ~/.dunstrc
 

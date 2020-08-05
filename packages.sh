@@ -22,7 +22,8 @@ sudo pacman -Sy \
   tmux \
   zathura \
   zathura-pdf-mupdf \
-  zsh
+  zsh \
+  alacritty
 
 # Extra
 sudo pacman -Sy \

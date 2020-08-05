@@ -13,4 +13,3 @@ dunst -conf ~/.dunstrc &
 nm-applet &
 ~/.config/polybar/launch.sh &
 sxhkd &
-term.sh &

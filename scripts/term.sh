@@ -7,7 +7,7 @@ FOCUSED_ID=$(printf %d $FOCUSED_ID)
 echo $ID $FOCUSED_ID
 
 if [ -z "$ID" ]; then
-  st -c gterm -e "tmux"
+  alacritty --class gterm,gterm
 elif [ $ID == $FOCUSED_ID  ]; then
   bspc node $ID -g hidden=on
 else
