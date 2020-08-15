@@ -28,10 +28,13 @@ vnoremap <leader>gs y :CocSearch <C-R>"
 nnoremap <leader>s :Rg <C-R><C-W>
 vnoremap <leader>s y :Rg <C-R>"
 
+nnoremap gp `[v`]
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
 
 command! Bdo %bd|e#
 
