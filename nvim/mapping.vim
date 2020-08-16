@@ -20,6 +20,7 @@ nnoremap <silent> <leader>] :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
 
 nnoremap <leader>o :Files %:h/../
 nnoremap <leader>c :e %:h/
+nnoremap <leader>v :r %:h/
 nnoremap <leader>m :!mv % %:h/
 nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
 vnoremap <leader>i y :%s/<C-R>"//g<Left><Left>
