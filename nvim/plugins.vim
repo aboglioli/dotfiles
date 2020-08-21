@@ -24,6 +24,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'maxmellon/vim-jsx-pretty'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
