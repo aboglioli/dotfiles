@@ -1,11 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
-" Unstable
-" Plug 'neovim/nvim-lsp'
-
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'dense-analysis/ale'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'Shougo/deoplete-lsp'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -35,6 +30,8 @@ Plug 'mattn/emmet-vim'
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'rust-lang/rust.vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 "" Deoplete
