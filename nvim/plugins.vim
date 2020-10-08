@@ -1,6 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -19,19 +19,16 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'Yggdroot/indentLine'
-Plug 'maxmellon/vim-jsx-pretty'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'mattn/emmet-vim'
-Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'rust-lang/rust.vim'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
 call plug#end()
 
 "" Deoplete
