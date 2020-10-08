@@ -21,7 +21,7 @@ Plug 'mhinz/vim-signify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'camspiers/lens.vim'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -42,10 +42,10 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
-" gutentags
-if executable('rg')
-  let g:gutentags_file_list_command = 'rg --files'
-endif
+" " gutentags
+" if executable('rg')
+"   let g:gutentags_file_list_command = 'rg --files'
+" endif
 
 "" fzf
 " let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
