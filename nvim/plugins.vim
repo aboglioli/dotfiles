@@ -25,11 +25,31 @@ Plug 'chriskempson/base16-vim'
 
 "" Language specific
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'rust-lang/rust.vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
+
+"" Coc
+let g:coc_global_extensions = [
+  \'coc-css',
+  \'coc-emmet',
+  \'coc-eslint',
+  \'coc-go',
+  \'coc-html',
+  \'coc-json',
+  \'coc-prettier',
+  \'coc-rls',
+  \'coc-tslint',
+  \'coc-tslint-plugin',
+  \'coc-tsserver',
+  \'coc-yank',
+  \]
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
