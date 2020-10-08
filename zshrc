@@ -58,4 +58,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Base16 fzf
-source ~/.config/base16-fzf/bash/base16-gruvbox-dark-medium.config
+source ~/.config/base16-fzf/bash/base16-material.config
