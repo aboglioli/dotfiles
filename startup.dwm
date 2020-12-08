@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Configuration
+feh --bg-scale ~/.background.jpg
+setxkbmap es
+wmname LG3D
+numlockx
+xsetroot -cursor_name left_ptr
+
+# Background
+dunst -conf ~/.dunstrc &
+nm-applet &
+sxhkd -c ~/.config/sxhkd/sxhkdrc.dwm &

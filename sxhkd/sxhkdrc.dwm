@@ -1,0 +1,42 @@
+#
+# Launcher
+#
+super + shift + Return
+  alacritty
+
+super + p
+  rofi -show run
+
+super + shift + p
+  rofi -show windowcd
+
+super + F12
+  rofi -show window
+
+@Print
+  NAME=$(date +"%Y-%m-%d_%H%M%S").png; \
+	scrot -s ~/screenshots/$NAME; \
+  notify-send -u low -t 1000 Screenshot $NAME
+
+super + Print
+  rm ~/screenshots/*.png
+
+#
+# External
+#
+XF86AudioRaiseVolume
+  ponymix increase 3
+
+XF86AudioLowerVolume
+  ponymix decrease 3
+
+XF86AudioMute
+  ponymix toggle; \
+  notify-send -u low -t 1000 Audio $(ponymix is-muted && echo "off" || echo "on")
+
+super + XF86AudioMute
+  ponymix --input toggle; \
+  notify-send -u low -t 1000 Mic $(ponymix --input is-muted && echo "off" || echo "on")
+
+super + Escape
+	pkill -USR1 -x sxhkd

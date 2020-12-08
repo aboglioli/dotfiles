@@ -44,6 +44,8 @@ alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias ds='pwd > /tmp/cwd'
 alias dr='cd "$(</tmp/cwd)"'
 
+# alias kubectl='microk8s.kubectl'
+
 export ANDROID_HOME="$HOME/Android/Sdk"
 
 export NVM_DIR="$HOME/.nvm"

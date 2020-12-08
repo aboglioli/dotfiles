@@ -23,6 +23,7 @@ ln -sf $SRC/i3/i3status.conf ~/.i3status.conf
 ln -sf $SRC/notification.ogg ~/.notification.ogg
 
 ln -sf $SRC/startup ~/.startup
+ln -sf $SRC/startup.dwm ~/.startup.dwm
 
 ln -sf $SRC/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
