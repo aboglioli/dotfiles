@@ -108,6 +108,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # bar and colors
+default_border pixel 2
 
 # Color config
 set $bg-color 	         #2f343f
