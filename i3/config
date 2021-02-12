@@ -83,6 +83,8 @@ workspace $ws10 output $mon3
 bindsym $mod+F1 focus output $mon1
 bindsym $mod+F2 focus output $mon2
 bindsym $mod+F3 focus output $mon3
+bindsym $mod+comma focus output left
+bindsym $mod+period focus output right
 
 bindsym $mod+Shift+F1 move container to output $mon1
 bindsym $mod+Shift+F2 move container to output $mon2
@@ -151,7 +153,7 @@ client.urgent           $blue-color    $blue-color   $text-color          #00ff0
 bar {
   status_command i3status
 
-  position top
+  position bottom
   tray_output primary
 
   colors {
