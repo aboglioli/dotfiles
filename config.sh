@@ -18,7 +18,7 @@ ln -sf $SRC/fonts.conf ~/.fonts.conf
 ln -sf $SRC/fonts ~/.fonts
 fc-cache -vf
 
-ln -sf $SRC/i3 ~/.i3
+ln -sf $SRC/i3 ~/.config/i3
 ln -sf $SRC/notification.ogg ~/.notification.ogg
 
 ln -sf $SRC/startup ~/.startup
