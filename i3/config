@@ -111,7 +111,7 @@ bindsym $mod+r mode "resize"
 default_border pixel 2
 
 # Color config
-set $bg-color 	         #2f343f
+set $bg-color 	         #e63946
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -130,7 +130,7 @@ bar {
   position top
 
   colors {
-    background $bg-color
+    background $inactive-bg-color
     separator #757575
 
     focused_workspace $bg-color $bg-color $text-color
