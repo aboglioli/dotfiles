@@ -34,7 +34,7 @@ XF86AudioMute
   ponymix toggle; \
   notify-send -u low -t 1000 Audio $(ponymix is-muted && echo "off" || echo "on")
 
-super + XF86AudioMute
+super + m
   ponymix --input toggle; \
   notify-send -u low -t 1000 Mic $(ponymix --input is-muted && echo "off" || echo "on")
 
