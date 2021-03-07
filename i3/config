@@ -24,6 +24,12 @@ bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
+# swap windows
+bindsym $mod+Ctrl+$left mark swap; focus left; swap container with mark swap; unmark swap
+bindsym $mod+Ctrl+$down mark swap; focus down; swap container with mark swap; unmark swap
+bindsym $mod+Ctrl+$up mark swap; focus up; swap container with mark swap; unmark swap
+bindsym $mod+Ctrl+$right mark swap; focus right; swap container with mark swap; unmark swap
+
 # split
 bindsym $mod+h split h
 bindsym $mod+v split v
