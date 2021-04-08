@@ -157,7 +157,7 @@ client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.urgent           $blue-color    $blue-color   $text-color          #00ff00
 
 bar {
-  status_command i3status
+  status_command i3status -c ~/.config/i3/status.conf
 
   position bottom
   tray_output primary
