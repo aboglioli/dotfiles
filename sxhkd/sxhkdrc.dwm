@@ -2,7 +2,7 @@
 # Launcher
 #
 super + shift + Return
-  alacritty
+  alacritty -e tmux
 
 super + p
   rofi -show run
