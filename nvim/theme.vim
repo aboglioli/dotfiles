@@ -1,2 +1,2 @@
 syntax on
-colorscheme base16-material
+colorscheme base16-onedark

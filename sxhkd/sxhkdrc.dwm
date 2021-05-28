@@ -1,8 +1,8 @@
 #
 # Launcher
 #
-super + shift + Return
-  alacritty -e tmux
+super + Return
+  alacritty
 
 super + p
   rofi -show run
