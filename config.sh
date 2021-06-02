@@ -10,8 +10,8 @@ ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/dunstrc ~/.dunstrc
 
 ln -sf $SRC/sxhkd ~/.config/sxhkd
-ln -sf $SRC/bspwm ~/.config/bspwm
-ln -sf $SRC/polybar ~/.config/polybar
+# ln -sf $SRC/bspwm ~/.config/bspwm
+# ln -sf $SRC/polybar ~/.config/polybar
 
 rm -rf ~/.fonts
 ln -sf $SRC/fonts.conf ~/.fonts.conf
@@ -22,7 +22,6 @@ ln -sf $SRC/i3 ~/.config/i3
 ln -sf $SRC/notification.ogg ~/.notification.ogg
 
 ln -sf $SRC/startup ~/.startup
-ln -sf $SRC/startup.dwm ~/.startup.dwm
 
 ln -sf $SRC/Xresources ~/.Xresources
 xrdb -merge ~/.Xresources

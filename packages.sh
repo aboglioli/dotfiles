@@ -8,15 +8,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Base
 sudo pacman -Sy \
-  bspwm \
-  ctags \
+  i3 \
   docker \
   docker-compose \
   docker-machine \
   dunst \
   mpv \
   neovim \
-  polybar \
   sxhkd \
   sxiv \
   tmux \
@@ -29,7 +27,6 @@ sudo pacman -Sy \
 sudo pacman -Sy \
   feh \
   network-manager-applet \
-  numlockx \
   picom \
   wmname \
   xdotool \

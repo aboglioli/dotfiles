@@ -8,8 +8,7 @@ numlockx
 xsetroot -cursor_name left_ptr
 
 # Background
-picom &
 dunst -conf ~/.dunstrc &
 nm-applet &
-~/.config/polybar/launch.sh &
-sxhkd &
+~/dotfiles/scripts/xroot.sh &
+sxhkd -c ~/.config/sxhkd/sxhkdrc.dwm &
