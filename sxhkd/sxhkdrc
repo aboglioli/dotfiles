@@ -2,15 +2,12 @@
 # Launcher
 #
 super + Return
-  term.sh
-
-super + shift + Return
   alacritty
 
-super + d
+super + p
   rofi -show run
 
-super + shift + d
+super + shift + p
   rofi -show windowcd
 
 super + F12
@@ -37,128 +34,9 @@ XF86AudioMute
   ponymix toggle; \
   notify-send -u low -t 1000 Audio $(ponymix is-muted && echo "off" || echo "on")
 
-super + XF86AudioMute
+super + m
   ponymix --input toggle; \
   notify-send -u low -t 1000 Mic $(ponymix --input is-muted && echo "off" || echo "on")
 
-#
-# bspwm + sxhkd
-#
-# general
 super + Escape
 	pkill -USR1 -x sxhkd
-
-super + alt + {q,r}
-	bspc {quit,wm -r}
-
-super + {_,shift + }w
-	bspc node -{c,k}
-
-super + ctrl + w
-  bspc query -N -n .\!focused.local.leaf | xargs -I id -n 1 bspc node id -c
-
-# navigation/selection
-super + {Left,Down,Up,Right}
-	bspc node -f {west,south,north,east}
-
-super + {a,shift + a,comma,period}
-	bspc node -f @{parent,brother,first,second}
-
-super + alt + {Left,Right}
-	bspc node -f {prev,next}.local
-
-super + Tab
-  bspc node -f last
-
-super + shift + Tab
-  bspc node -s last
-
-super + {F1, F2, F3}
-	bspc monitor -f ^{1,2,3}
-
-super + shift + {F1, F2, F3}
-	bspc node -m ^{1,2,3}
-
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
-
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
-
-super + space
-  bspc node -f next.floating.local
-
-# layout
-super + {t,shift + t}
-	bspc node -t {tiled,pseudo_tiled}
-
-super + shift + space
-  bspc node -t \~floating
-
-super + f
-  bspc node -t \~fullscreen
-
-super + shift + f
-	bspc desktop -l next
-
-# move/swap/resize/rotate
-super + shift + {1-9,0}
-	bspc node -d '^{1-9,10}'
-
-super + {shift + , shift + ctrl + }{Left,Down,Up,Right}
-	bspc node -{s,n} {west,south,north,east}
-
-super + g
-	bspc node -f biggest.local
-
-super + shift + g
-	bspc node -s biggest.local
-
-super + {_,shift + }s
-  bspc node -{s,n} any.marked
-
-super + ctrl + s
-  bspc query -N -n any.marked | xargs -I id -n 1 bspc node id -d focused
-
-super + ctrl + {Left,Down,Up,Right}
-	bspc node -p {west,south,north,east}
-
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
-
-super + ctrl + space
-	bspc node -p cancel
-
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-super + r
-  bspc node -R 90
-
-super + {h,v}
-  bspc node -F {horizontal,vertical}
-
-super + shift + r : {Left,Right}
-  INC={-50,+50}; bspc node @east -r $INC || bspc node @west -r $INC
-
-super + shift + r : {Down,Up}
-  INC={+50,-50}; bspc node @north -r $INC || bspc node @south -r $INC
-
-super + {_,shift + }c
-  bspc node --circulate {forward,backward}
-
-super + {_,shift + }e
-  bspc node {--equalize,--balance}
-
-# state
-super + x
-  bspc node -g sticky
-
-super + q
-  bspc node last.marked -g marked; \
-  bspc node -g marked
-
-super + shift + q
-  bspc query -N -n .marked | xargs -I id -n 1 bspc node id -g marked=off
