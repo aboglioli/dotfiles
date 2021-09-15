@@ -52,4 +52,7 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+require'lualine'.setup {
+  options = {theme = 'everforest'}
+}
 EOF
