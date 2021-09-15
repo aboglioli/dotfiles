@@ -16,6 +16,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "" Themes
 Plug 'chriskempson/base16-vim'
@@ -24,7 +25,3 @@ Plug 'chriskempson/base16-vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 call plug#end()
-
-"" Configuration
-let g:indentLine_char_list = ['┊']
-let g:vim_json_conceal=0
