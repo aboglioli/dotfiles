@@ -32,6 +32,7 @@ set sidescrolloff=5
 set list
 set listchars=tab:\┊\ 
 set inccommand=split
+set conceallevel=0
 
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
@@ -39,3 +40,5 @@ augroup LuaHighlight
   autocmd!
   autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
 augroup END
+
+let g:vim_json_conceal=0

@@ -44,14 +44,6 @@ alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias ds='pwd > /tmp/cwd'
 alias dr='cd "$(</tmp/cwd)"'
 
-# alias kubectl='microk8s.kubectl'
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -64,8 +56,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Base16 fzf
-source ~/.config/base16-fzf/bash/base16-material.config
-
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+source ~/.config/base16-fzf/bash/base16-horizon-dark.config

@@ -16,27 +16,16 @@ nnoremap <silent> <leader>t :BTags<CR>
 
 nnoremap <silent> <leader><tab> :b#<CR>
 
-nnoremap <silent> <leader>] :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
-
 nnoremap <leader>o :Files %:h/../
 nnoremap <leader>c :e %:h/
 nnoremap <leader>v :r %:h/
 nnoremap <leader>m :!mv % %:h/
 nnoremap <leader>i :%s/\<<C-R><C-W>\>//g<Left><Left>
 vnoremap <leader>i y :%s/<C-R>"//g<Left><Left>
-nnoremap <leader>gs :CocSearch <C-R><C-W>
-vnoremap <leader>gs y :CocSearch <C-R>"
 nnoremap <leader>s :Rg <C-R><C-W>
 vnoremap <leader>s y :Rg <C-R>"
 
 nnoremap gp `[v`]
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> ga <Plug>(coc-codeaction)
-
 
 command! Bdo %bd|e#
 
@@ -45,5 +34,20 @@ noremap ^ 0
 
 tnoremap <C-w> <C-\><C-n>
 
-" For specific files
-autocmd FileType rust nnoremap <buffer> <C-T> :RustTest<CR>
+" LSP config (the mappings used in the default file don't quite work right)
+nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+" nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+" nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+
+" auto-format
+autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.tsx lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 100)

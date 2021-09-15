@@ -1,2 +1,3 @@
 syntax on
-colorscheme base16-monokai
+colorscheme base16-gruvbox-dark-soft
+let g:lightline = { 'colorscheme': 'wombat' }
