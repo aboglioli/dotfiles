@@ -10,6 +10,7 @@ ln -sf $SRC/background.jpg ~/.background.jpg
 ln -sf $SRC/dunstrc ~/.dunstrc
 
 ln -sf $SRC/sxhkd ~/.config/sxhkd
+ln -sf $SRC/kitty ~/.config/kitty
 # ln -sf $SRC/bspwm ~/.config/bspwm
 # ln -sf $SRC/polybar ~/.config/polybar
 
