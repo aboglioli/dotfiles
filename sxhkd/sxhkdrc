@@ -2,7 +2,7 @@
 # Launcher
 #
 super + Return
-  alacritty
+  kitty
 
 super + p
   rofi -show run
