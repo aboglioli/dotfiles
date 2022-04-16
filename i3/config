@@ -1,4 +1,4 @@
-font pango:Ubuntu 9
+font pango:Ubuntu 8
 
 set $mod Mod4
 floating_modifier $mod
