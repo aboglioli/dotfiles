@@ -61,3 +61,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 source ~/.config/base16-fzf/bash/base16-horizon-dark.config
+
+# NVM
+source /usr/share/nvm/init-nvm.sh
