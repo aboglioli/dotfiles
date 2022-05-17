@@ -1,7 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 "" General
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/nerdtree'

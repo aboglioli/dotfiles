@@ -1,10 +1,12 @@
 export ZSH=$HOME/.oh-my-zsh
+
 ZSH_THEME="kolo"
+
 source $ZSH/oh-my-zsh.sh
 
-eval "$(starship init zsh)"
-
+# --------
 # VIM mode
+# --------
 bindkey -v
 export KEYTIMEOUT=1
 
@@ -18,15 +20,15 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
+# ---------------------
 # Environment variables
+# ---------------------
 export TERM=xterm-256color
 
-export LOCAL="$HOME/.local"
+export DOTFILESPATH="$HOME/dotfiles"
 export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
-export YARNPATH="$HOME/.yarn"
-export PYENVPATH="$HOME/.pyenv"
-export PATH="./vendor/bin:./node_modules/.bin:$HOME/bin:$HOME/dotfiles/scripts:$LOCAL/bin:$GOPATH/bin:$CARGOPATH/bin:$YARNPATH/bin:$PYENVPATH/bin:$PATH"
+export PATH="$HOME/bin:$DOTFILESPATH/bin:$GOPATH/bin:$CARGOPATH/bin:$PATH"
 
 export EDITOR=nvim
 export VISUAL=$EDITOR
@@ -44,10 +46,13 @@ alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias ds='pwd > /tmp/cwd'
 alias dr='cd "$(</tmp/cwd)"'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# ----------------------
+# External configuration
+# ----------------------
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# FZF
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -55,5 +60,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-# Base16 fzf
 source ~/.config/base16-fzf/bash/base16-horizon-dark.config
