@@ -1,6 +1,4 @@
-" set number
 set relativenumber
-" set noshowcmd
 set clipboard=unnamed
 set hidden
 set expandtab
@@ -12,7 +10,6 @@ set cursorline
 set laststatus=2
 set noshowmode
 set autoindent
-" set autochdir
 set autoread
 set splitbelow
 set splitright
