@@ -46,6 +46,11 @@ alias tt='cd "./$(git rev-parse --show-cdup)"'
 alias ds='pwd > /tmp/cwd'
 alias dr='cd "$(</tmp/cwd)"'
 
+alias gsync='
+  git fetch --all --prune && \
+  git branch --merged | rg -v "(main|master|develop)" | xargs git branch -d
+'
+
 # ----------------------
 # External configuration
 # ----------------------
