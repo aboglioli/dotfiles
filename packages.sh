@@ -11,6 +11,7 @@ sudo pacman -Sy \
   dunst \
   feh \
   fzf \
+  git \
   go \
   i3 \
   kitty \
