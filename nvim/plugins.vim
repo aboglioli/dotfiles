@@ -20,6 +20,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "" Themes
 Plug 'chriskempson/base16-vim'
+Plug 'savq/melange'
 
 "" Language specific
 Plug 'neovim/nvim-lspconfig'
