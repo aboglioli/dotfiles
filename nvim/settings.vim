@@ -10,6 +10,7 @@ set cursorline
 set laststatus=2
 set noshowmode
 set autoindent
+set smartindent
 set autoread
 set splitbelow
 set splitright
@@ -30,6 +31,8 @@ set list
 set listchars=tab:\┊\ 
 set inccommand=split
 set conceallevel=0
+
+filetype plugin indent on
 
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
@@ -56,5 +59,6 @@ require'lualine'.setup {
 }
 require'indent_blankline'.setup {
     show_current_context = true,
+    show_current_context_start = true,
 }
 EOF
