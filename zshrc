@@ -51,6 +51,9 @@ alias gsync='
   git branch --merged | rg -v "(main|master|develop)" | xargs git branch -d
 '
 
+alias todo='nvim $HOME/todo.md'
+alias notes='nvim $HOME/notes.md'
+
 # ----------------------
 # External configuration
 # ----------------------
