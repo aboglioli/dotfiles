@@ -48,7 +48,7 @@ alias dr='cd "$(</tmp/cwd)"'
 
 alias gsync='
   git fetch --all --prune && \
-  git branch --merged | rg -v "(main|master|develop)" | xargs git branch -d
+  git branch --merged | rg -v "(main|master|develop|staging|release)" | xargs git branch -d
 '
 
 alias todo='nvim $HOME/todo.md'
