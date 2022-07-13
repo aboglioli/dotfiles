@@ -1,11 +1,8 @@
 [user]
-	email = alan.boglioli@gmail.com
-	name = Alan Boglioli
+  email = alan.boglioli@gmail.com
+  name = Alan Boglioli
 [github]
-	user = aboglioli
-
-[includeIf "gitdir:~/dev/work/**"]
-  path = ~/dev/work/.gitconfig
+  user = aboglioli
 
 [mergetool "nvim"]
   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
@@ -14,3 +11,5 @@
 [mergetool]
   prompt = true
 
+[includeIf "gitdir:~/dev/work/**"]
+  path = ~/dev/work/.gitconfig
