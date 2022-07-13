@@ -3,3 +3,14 @@
 	name = Alan Boglioli
 [github]
 	user = aboglioli
+
+[includeIf "gitdir:~/dev/work/**"]
+  path = ~/dev/work/.gitconfig
+
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+[merge]
+  tool = nvim
+[mergetool]
+  prompt = true
+
