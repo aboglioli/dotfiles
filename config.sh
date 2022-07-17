@@ -16,3 +16,4 @@ ln -sf $SRC/nvim ~/.config
 ln -sf $SRC/startup ~/.startup
 ln -sf $SRC/sxhkd ~/.config
 ln -sf $SRC/zathura ~/.config
+ln -sf $SRC/picom.conf ~/.config
