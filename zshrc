@@ -37,6 +37,8 @@ export PAGER=less
 export BROWSER=brave
 export AWT_TOOLKIT=MToolkit
 
+export FZF_DEFAULT_OPTS="--reverse --info=inline"
+
 # Aliases
 alias v="nvim"
 alias dev="cd ~/dev"
