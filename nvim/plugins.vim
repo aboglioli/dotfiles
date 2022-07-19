@@ -21,6 +21,10 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "" Themes
 Plug 'chriskempson/base16-vim'
 Plug 'savq/melange'
+Plug 'sainnhe/gruvbox-material'
+Plug 'sainnhe/everforest'
+Plug 'sainnhe/sonokai'
+Plug 'sainnhe/edge'
 
 "" Language specific
 Plug 'neovim/nvim-lspconfig'
