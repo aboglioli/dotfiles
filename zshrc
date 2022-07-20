@@ -52,6 +52,11 @@ alias gsync='
   git fetch --all --prune && \
   git branch --merged | rg -v "(main|master|develop|staging|release)" | xargs git branch -d
 '
+gquick() {
+  folder=/tmp/$(basename $1)
+  git clone $1 $folder && cd $folder
+  nvim
+}
 
 alias todo='nvim $HOME/todo.md'
 alias notes='nvim $HOME/notes.md'
