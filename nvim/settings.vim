@@ -31,6 +31,7 @@ set list
 set listchars=tab:\┊\ 
 set inccommand=split
 set conceallevel=0
+set encoding=UTF-8
 
 filetype plugin indent on
 
@@ -49,6 +50,8 @@ let g:fzf_layout = { 'down':  '60%'}
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 
 lua <<EOF
+require'nvim-tree'.setup()
+
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
@@ -58,9 +61,11 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   },
 }
+
 require'lualine'.setup {
   options = {theme = 'everforest'}
 }
+
 require'indent_blankline'.setup {
     show_current_context = true,
     show_current_context_start = true,

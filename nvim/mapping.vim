@@ -8,8 +8,8 @@ nnoremap <silent> <leader>w :w<CR>
 
 nnoremap <silent> <C-P> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <silent> <leader>p :Files %:h<CR>
-nnoremap <silent> <leader>e :NERDTreeToggle %<CR>
-nnoremap <silent> <leader>f :NERDTreeToggle .<CR>
+nnoremap <silent> <leader>e :NvimTreeToggle %:h<CR>
+nnoremap <silent> <leader>f :NvimTreeToggle .<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>l :BLines<CR>
 nnoremap <silent> <leader>t :BTags<CR>
