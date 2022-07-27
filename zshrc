@@ -52,7 +52,7 @@ alias gsync='
   git fetch --all --prune && \
   git branch --merged | rg -v "(main|master|develop|staging|release)" | xargs git branch -d
 '
-gquick() {
+gview() {
   folder=/tmp/$(basename $1)
   git clone $1 $folder && cd $folder
   nvim
