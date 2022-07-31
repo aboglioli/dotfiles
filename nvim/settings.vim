@@ -1,3 +1,4 @@
+set number
 set relativenumber
 set clipboard=unnamed
 set hidden
