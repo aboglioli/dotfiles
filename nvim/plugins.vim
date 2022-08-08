@@ -1,7 +1,8 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 "" General
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'hoob3rt/lualine.nvim'

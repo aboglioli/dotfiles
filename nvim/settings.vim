@@ -46,7 +46,6 @@ augroup END
 "" Configuration
 let g:indentLine_char_list = ['|']
 let g:vim_json_conceal=0
-let g:fzf_layout = { 'down':  '60%'}
 
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 
