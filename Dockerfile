@@ -1,12 +1,10 @@
-FROM alpine:latest
+FROM alpine:edge
 
 ENV USER=admin
 ENV UID=1000
 ENV PASSWD=admin
 
 # Packages
-RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
-
 RUN apk update && apk upgrade
 RUN apk add \
   bash \
