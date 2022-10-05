@@ -10,4 +10,4 @@ xsetroot -cursor_name left_ptr
 dunst -conf ~/.dunstrc &
 nm-applet &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
-picom -b
+# picom -b
