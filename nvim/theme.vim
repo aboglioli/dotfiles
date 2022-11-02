@@ -2,10 +2,5 @@ syntax on
 
 set background=dark
 
-" let g:everforest_background = 'hard'
-" let g:everforest_better_performance = 1
-" colorscheme everforest
+colorscheme melange
 
-let g:gruvbox_material_background = 'soft'
-let g:gruvbox_material_better_performance = 1
-colorscheme gruvbox-material
