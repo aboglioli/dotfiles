@@ -1,6 +1,8 @@
 syntax on
 
-set background=dark
+" set background=dark
+" colorscheme melange
 
-colorscheme melange
+set background=dark
+colorscheme gruvbox-material
 

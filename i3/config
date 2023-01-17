@@ -60,8 +60,7 @@ bindsym $mod+minus scratchpad show
 # workspaces and monitors
 
 set $mon1 HDMI-0
-set $mon2 HDMI-1
-set $mon3 DP-3
+set $mon2 DP-0
 
 set $ws1 "1"
 set $ws2 "2"
@@ -82,18 +81,16 @@ workspace $ws5 output $mon2
 workspace $ws6 output $mon2
 workspace $ws7 output $mon2
 workspace $ws8 output $mon2
-workspace $ws9 output $mon3
-workspace $ws10 output $mon3
+workspace $ws9 output $mon1
+workspace $ws10 output $mon1
 
 bindsym $mod+F1 focus output $mon1
 bindsym $mod+F2 focus output $mon2
-bindsym $mod+F3 focus output $mon3
 bindsym $mod+comma focus output left
 bindsym $mod+period focus output right
 
 bindsym $mod+Shift+F1 move container to output $mon1
 bindsym $mod+Shift+F2 move container to output $mon2
-bindsym $mod+Shift+F3 move container to output $mon3
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
