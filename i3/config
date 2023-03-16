@@ -155,7 +155,7 @@ client.urgent           $blue-color    $blue-color   $text-color          #00ff0
 bar {
   status_command i3status -c ~/.config/i3/status.conf
 
-  position top
+  position bottom
   tray_output primary
 
   colors {

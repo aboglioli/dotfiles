@@ -39,7 +39,17 @@ export AWT_TOOLKIT=MToolkit
 
 export FZF_DEFAULT_OPTS="--reverse --info=inline"
 
+# -------
+# Secrets
+# -------
+SECRETS_FILE="$HOME/.secrets.sh"
+if [ -f "$SECRETS_FILE" ]; then
+  source "$SECRETS_FILE"
+fi
+
+# -------
 # Aliases
+# -------
 alias v="nvim"
 alias dev="cd ~/dev"
 

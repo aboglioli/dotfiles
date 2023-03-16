@@ -19,6 +19,8 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'github/copilot.vim'
 Plug 'sindrets/diffview.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'dpayne/CodeGPT.nvim'
 
 "" Themes
 Plug 'kyazdani42/nvim-web-devicons' " Icons
