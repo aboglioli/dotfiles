@@ -30,6 +30,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'sainnhe/everforest'
 Plug 'sainnhe/sonokai'
 Plug 'sainnhe/edge'
+Plug 'navarasu/onedark.nvim'
 
 "" Language specific
 Plug 'neovim/nvim-lspconfig'

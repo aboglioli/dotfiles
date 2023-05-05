@@ -1,4 +1,5 @@
 local lsp = require("lspconfig")
+local compe = require('compe')
 
 vim.o.completeopt = "menuone,noselect"
 
@@ -8,7 +9,7 @@ lsp.rust_analyzer.setup{}
 lsp.gopls.setup{}
 
 -- Compe
-require'compe'.setup {
+compe.setup {
   enabled = true;
   autocomplete = true;
   debug = false;
@@ -35,6 +36,7 @@ require'compe'.setup {
     treesitter = true;
   };
 }
+
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
 end

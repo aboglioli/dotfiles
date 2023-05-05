@@ -1,8 +1,12 @@
 syntax on
 
-" set background=dark
-" colorscheme melange
+lua <<EOF
+require('onedark').load()
+EOF
 
 set background=dark
-colorscheme gruvbox-material
+
+" colorscheme melange
+" colorscheme gruvbox-material
+colorscheme onedark
 
