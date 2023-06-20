@@ -20,7 +20,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'github/copilot.vim'
 Plug 'sindrets/diffview.nvim'
 Plug 'MunifTanjim/nui.nvim'
-Plug 'dpayne/CodeGPT.nvim'
 
 "" Themes
 Plug 'kyazdani42/nvim-web-devicons' " Icons
@@ -35,4 +34,9 @@ Plug 'navarasu/onedark.nvim'
 "" Language specific
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+
+"" DAP
+Plug 'mfussenegger/nvim-dap'
+Plug 'leoluz/nvim-dap-go'
+Plug 'rcarriga/nvim-dap-ui'
 call plug#end()
