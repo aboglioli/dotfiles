@@ -167,3 +167,6 @@ bar {
     urgent_workspace $blue-color $blue-color $text-color
   }
 }
+
+# Start applications
+exec ~/.startup
