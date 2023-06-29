@@ -1,4 +1,4 @@
-font pango:Ubuntu 10
+font pango:Ubuntu 11
 
 set $mod Mod4
 floating_modifier $mod
@@ -137,6 +137,7 @@ bindsym $mod+r mode "resize"
 
 # bar and colors
 default_border pixel 2
+gaps inner 5px
 
 # Color config
 set $bg-color 	         #e63946
@@ -152,10 +153,12 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $blue-color    $blue-color   $text-color          #00ff00
 
+client.background       #ffffff
+
 bar {
   status_command i3status -c ~/.config/i3/status.conf
 
-  position bottom
+  position top
   tray_output primary
 
   colors {
