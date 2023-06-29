@@ -7,7 +7,9 @@ wmname LG3D
 xsetroot -cursor_name left_ptr
 
 # Run in background
+pipewire &
+wireplumber &
 dunst -conf ~/.dunstrc &
 nm-applet &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
-# picom -b
+picom -b
