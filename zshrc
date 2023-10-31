@@ -1,5 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
+plugins=(git kubectl)
+
 ZSH_THEME="kolo"
 
 source $ZSH/oh-my-zsh.sh
@@ -28,7 +30,8 @@ export TERM=xterm-256color
 export DOTFILESPATH="$HOME/dotfiles"
 export GOPATH="$HOME/.go"
 export CARGOPATH="$HOME/.cargo"
-export PATH="$HOME/bin:$DOTFILESPATH/bin:$GOPATH/bin:$CARGOPATH/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/bin:$DOTFILESPATH/bin:$GOPATH/bin:$CARGOPATH/bin:$PYENV_ROOT/bin:$PATH"
 
 export EDITOR=nvim
 export VISUAL=$EDITOR
@@ -71,6 +74,12 @@ gview() {
 alias todo='nvim $HOME/todo.md'
 alias notes='nvim $HOME/notes.md'
 
+loadenv() {
+  set -a
+  source $1
+  set +a
+}
+
 # ----------------------
 # External configuration
 # ----------------------
@@ -89,3 +98,8 @@ source ~/.config/base16-fzf/bash/base16-horizon-dark.config
 
 # NVM
 source /usr/share/nvm/init-nvm.sh
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
