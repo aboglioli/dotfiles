@@ -136,8 +136,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # bar and colors
-default_border pixel 2
-gaps inner 5px
+default_border pixel 3
+# gaps inner 5px
 
 # Color config
 set $bg-color 	         #e63946
@@ -148,26 +148,30 @@ set $urgent-bg-color     #E53935
 set $blue-color          #5DA8F4
 
 # Window colors
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $blue-color    $blue-color   $text-color          #00ff00
+client.focused          #4C7899 #285577 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
-client.background       #ffffff
+client.background       #FFFFFF
 
 bar {
   status_command i3status -c ~/.config/i3/status.conf
 
-  position top
+  position bottom
   tray_output primary
 
   colors {
-    background $inactive-bg-color
-    separator #757575
+    background #000000
+    statusline #FFFFFF
+    separator  #666666
 
-    focused_workspace $bg-color $bg-color $text-color
-    inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-    urgent_workspace $blue-color $blue-color $text-color
+    focused_workspace  #4C7899 #285577 #FFFFFF
+    active_workspace   #333333 #222222 #FFFFFF
+    inactive_workspace #333333 #222222 #888888
+    urgent_workspace   #2F343A #900000 #FFFFFF
+    binding_mode       #2F343A #900000 #FFFFFF
   }
 }
 
